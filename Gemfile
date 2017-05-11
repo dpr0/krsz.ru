@@ -1,45 +1,108 @@
+# frozen_string_literal: true
 source 'https://rubygems.org'
-
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
-# Use jquery as the JavaScript library
+ruby '2.4.1'
+gem 'less-rails-bootstrap'
+gem 'delayed_job_active_record'
+gem 'high_voltage'
 gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'normalize-rails'
 gem 'turbolinks'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
+gem 'pg'
+gem 'sass-rails'
+gem 'puma'
+gem 'rack-canonical-host'
+gem 'rails', '5.0.1'
+gem 'simple_form'
+gem 'title'
+gem 'rake'
+gem 'awesome_print',         require: 'ap'
+gem 'dotenv-rails'
+gem 'therubyracer'
+gem 'responders'
+gem 'redis-rails'
+gem 'redis', '~>3.2'
+# gem 'rails_admin'
+# gem 'rack-mini-profiler',    require: false
+gem 'pundit'
+# gem 'bootstrap-kaminari-views'
+# gem 'kaminari-i18n'
+# gem 'kaminari'
+gem 'haml-rails'
+gem 'devise-bootstrap-views'
+gem 'devise'
+gem 'ckeditor'
+gem 'mini_magick'
+gem 'carrierwave'
+gem 'rmagick'
+gem 'bootstrap-sass'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'rails-assets-tether'
+gem 'jquery-datatables-rails'
+gem 'remotipart'
+gem 'cocoon'
+# gem 'omniauth'
+# gem 'omniauth-facebook'
+# gem 'omniauth-twitter'
+# gem 'omniauth-vkontakte'
+gem 'whenever'
 # gem 'unicorn'
+# gem 'paperclip'
+# gem 'react-rails'
+# gem 'sidekiq'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
-
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
-
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+group :assets do
+  # gem 'sass-rails'
+  gem 'autoprefixer-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
 end
-
+group :development do
+  gem 'stackprof'
+  gem 'rubocop',             require: false
+  gem 'meta_request'
+  gem 'mailcatcher'
+  gem 'image_optim'
+  gem 'image_optim_pack'
+  gem 'flamegraph'
+  gem 'active_record_doctor'
+  gem 'spring'
+  gem 'spring-commands-rspec'
+  gem 'web-console'
+  gem 'bullet'
+  # gem 'pry-byebug'
+  # gem 'pry-rails'
+  # gem 'pry-doc'
+  # gem 'pry-rescue'
+  # gem 'pry-state'
+  # gem 'pry-stack_explorer'
+  # gem 'better_errors'
+  # gem 'binding_of_caller'
+  gem 'hirb'
+  gem 'listen'
+  # gem 'capistrano',          require: false
+  # gem 'capistrano-bundler',  require: false
+  # gem 'capistrano-rails',    require: false
+  # gem 'capistrano-rvm',      require: false
+  # gem 'capistrano-sidekiq',  require: false
+  # gem 'capistrano3-unicorn', require: false
+end
+# group :development, :test do
+#   gem 'factory_girl_rails'
+#   gem 'bundler-audit',       require: false
+#   gem 'rspec-rails'
+# end
+# group :test do
+#   gem 'fuubar'
+#   # gem 'capybara-webkit'
+#   gem 'database_cleaner'
+#   gem 'formulaic'
+#   gem 'launchy'
+#   gem 'shoulda-matchers'
+#   gem 'simplecov',           require: false
+#   gem 'timecop'
+#   gem 'webmock'
+# end
+# group :staging, :production do
+#   gem 'rack-timeout'
+# end
