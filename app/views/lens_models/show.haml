@@ -1,0 +1,8 @@
+-#= image_tag @lens_model.image
+%h3
+  = @lens_model.mount + ' ' + @lens_model.brand + ' ' + @lens_model.name
+  %b= link_to 'Продать', new_lens_item_path(lens_model: @lens_model)
+%div.col-xs-12
+  %div.panel.panel-default
+    %div
+      = render 'lens_items/lens_items'

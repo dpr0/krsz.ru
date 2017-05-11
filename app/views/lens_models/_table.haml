@@ -1,0 +1,23 @@
+%table.table-condensed.table-bordered.display
+  %thead
+    %tr
+      %th Байонет
+      %th Company
+      %th Объектив
+      %th ФР(min)
+      %th ФР(max)
+      %th Д(min)
+      %th Д(max)
+      %th Кол-во
+  %tbody
+    - lens_models.each do |lens_model|
+      %tr
+        %td= lens_model.mount
+        %td.dt-body-right= lens_model.brand
+        %td= link_to lens_model.name, lens_model
+        %td.dt-body-center= lens_model.frmin
+        %td.dt-body-center= lens_model.frmax if lens_model.frmin != lens_model.frmax
+        %td.dt-body-center= lens_model.diafmin
+        %td.dt-body-center= lens_model.diafmax if lens_model.diafmin != lens_model.diafmax
+        %td.dt-body-center
+          %span.badge= lens_models_items_count[lens_model.id]

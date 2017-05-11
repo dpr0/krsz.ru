@@ -1,0 +1,13 @@
+= simple_form_for(@camera_item) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.association :camera_model
+    = f.input :description
+    = f.input :price
+    = f.input :visible
+    = f.input :used
+    = f.input :image
+
+  .form-actions
+    = f.button :submit

@@ -1,0 +1,13 @@
+%table.table-condensed.table-bordered.display
+  %thead
+    %tr
+      %th Бренд
+      %th Камера
+      %th Кол-во
+  %tbody
+    - camera_models.each do |camera_model|
+      %tr
+        %td.dt-body-right= camera_model.brand
+        %td= link_to camera_model.name, camera_model
+        %td.dt-body-center
+          %span.badge= camera_models_items_count[camera_model.id]

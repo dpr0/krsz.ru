@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b Camera model:
+  = @camera_item.camera_model
+%p
+  %b User:
+  = @camera_item.user
+%p
+  %b Description:
+  = @camera_item.description
+%p
+  %b Price:
+  = @camera_item.price
+%p
+  %b Votes count:
+  = @camera_item.votes_count
+%p
+  %b Visible:
+  = @camera_item.visible
+%p
+  %b Used:
+  = @camera_item.used
+%p
+  %b Image:
+  = @camera_item.image
+
+= link_to 'Edit', edit_camera_item_path(@camera_item)
+\|
+= link_to 'Back', camera_items_path

@@ -1997,12 +1997,12 @@ var defaultModules = {
 			preloadImages: false,
 			imageCssSelector: '>img,>a>img',        // the selector used to choose a an image to apply a src or background to
 			fadeSwap: false,                        // fade the image before swapping
-			frontImages: [],                        // a list of images to use for the front
-			frontIsRandom: true,                    // should images be chosen at random or in order
+			frontImages: [],                        // a list of img to use for the front
+			frontIsRandom: true,                    // should img be chosen at random or in order
 			frontIsBackgroundImage: false,          // set the src attribute or css background-image property
 			frontIsInGrid: false,                   // only chooses one item for each iteration in flip-list
-			backImages: null,                       // a list of images to use for the back
-			backIsRandom: true,                     // should images be chosen at random or in order
+			backImages: null,                       // a list of img to use for the back
+			backIsRandom: true,                     // should img be chosen at random or in order
 			backIsBackgroundImage: false,           // set the src attribute or css background-image property
 			backIsInGrid: false                     // only chooses one item for each iteration in flip-list                
 		},
@@ -2554,13 +2554,13 @@ jQuery.fn.applicationBar.defaults = {
     collapseHeight: "auto",                                 // height the application bar will collapse back to when closed
     bindKeyboard: true,                                     // should up and down keys on keyborad be bound to the application bar
     handleSelector: "a.etc",
-    metroLightUrl: 'images/metroIcons_light.jpg',  // the url for the metro light icons (only needed if preload 'preloadAltBaseTheme' is true)
-    metroDarkUrl: 'images/metroIcons.jpg',         // the url for the metro dark icons (only needed if preload 'preloadAltBaseTheme' is true)
+    metroLightUrl: 'img/metroIcons_light.jpg',  // the url for the metro light icons (only needed if preload 'preloadAltBaseTheme' is true)
+    metroDarkUrl: 'img/metroIcons.jpg',         // the url for the metro dark icons (only needed if preload 'preloadAltBaseTheme' is true)
     preloadAltBaseTheme: false                             // should the applicationBar icons be pre loaded for the alternate theme to enable fast theme switching    
 };
 /* Preload Images */
 // Usage: jQuery(['img1.jpg', { src: 'img2.jpg' }]).metrojs.preloadImages(function(){ ... });
-// Callback function gets called after all images are preloaded
+// Callback function gets called after all img are preloaded
 $.fn.metrojs.preloadImages = function (callback) {
         var checklist = $(this).toArray();
         var $img = $("<img style='display:none;' />").appendTo("body");

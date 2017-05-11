@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 Rails.application.routes.draw do
+  devise_for :admins
+  devise_for :users
   # devise_for :admins
   # devise_for :users
   root to: 'welcome#index'
+  get 'welcome/index'
   resources :users
 
   resources :camera_items  do
@@ -28,5 +31,4 @@ Rails.application.routes.draw do
       get :select_lens_models
     end
   end
-
 end

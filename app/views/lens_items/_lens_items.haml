@@ -1,0 +1,32 @@
+%table#lens_items
+  %thead
+    %tr
+      %th №
+      %th Добавлен
+      %th Изменен
+      %th Пользователь
+      %th Цена
+      %th Просмотров
+      %th Фото
+  %tbody
+    - @lens_items.each do |lens_item|
+      %tr
+        %td.dt-body-center= lens_item.id
+        %td.dt-body-center= lens_item.created_at.strftime("%d.%m.%Y")
+        %td.dt-body-center= lens_item.updated_at.strftime("%d.%m.%Y")
+        %td= link_to lens_item.user.email, lens_item
+        %td.dt-body-right= lens_item.price
+        %td.dt-body-center= lens_item.votes_count
+        %td= image_tag lens_item.image.minithumb
+
+:javascript
+  $(document).ready(function() {
+    var table2;
+    table2 = $('#lens_items').dataTable({
+      bJQueryUI: true,
+      dom: "lfrtip",
+      'lengthMenu': [[10, 100, -1], [10, 20, 100, 'All']],
+      'language': {'url': '//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Russian.json'},
+      'order': [[7, 'desc']]
+    });
+  });

@@ -55,15 +55,15 @@
             // The regular expression to define for which files a preview
             // image is shown, matched against the file type:
             previewSourceFileTypes: /^image\/(gif|jpeg|png)$/,
-            // The maximum file size of images that are to be displayed as preview:
+            // The maximum file size of img that are to be displayed as preview:
             previewSourceMaxFileSize: 5000000, // 5MB
-            // The maximum width of the preview images:
+            // The maximum width of the preview img:
             previewMaxWidth: 80,
-            // The maximum height of the preview images:
+            // The maximum height of the preview img:
             previewMaxHeight: 80,
-            // By default, preview images are displayed as canvas elements
+            // By default, preview img are displayed as canvas elements
             // if supported by the browser. Set the following option to false
-            // to always display preview images as img elements:
+            // to always display preview img as img elements:
             previewAsCanvas: true,
             // The ID of the upload template:
             uploadTemplateId: 'template-upload',

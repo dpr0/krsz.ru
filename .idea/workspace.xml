@@ -2,118 +2,126 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b903545-4316-4327-ba75-8a6c11a4a654" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/fonts/custom-set.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/fonts/custom-set.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/fonts/custom-set.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/icon/Tick-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/icon/Tick.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/icon/noti-cross-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/icon/noti-cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/icon/online-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/icon/online.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/icon/portlet-tray-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/icon/portlet-tray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/icon/status.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/icon/status2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/icon/top-tray-b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/icon/top-tray-bx2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/icon/top-tray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/icon/top-trayx2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/pullup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/pullup2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/img/sidebar-menu-arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/css/themes/webarch.coporate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/css/themes/webarch.coporate.rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/css/themes/webarch.elegant.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/css/themes/webarch.elegant.rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/css/themes/webarch.simple.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/css/themes/webarch.simple.rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/css/webarch.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/css/webarch.rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/fonts/custom-set.dev.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/fonts/custom-set.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/js/webarch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/buttons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/charts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/datatable.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/demo.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/direction.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/error_page.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/form_elements.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/horizontal_menu.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/layout.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/message_notifications.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/misc.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/plugin.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/portlets.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/print.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/rtl.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/search_results.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/slider.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/tables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/tabs_accordians.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/tiles.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/timeline.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/typo.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/user_profile.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/modules/vector_maps.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/responsive.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/style.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/themes/coporate/theme.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/themes/coporate/var.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/themes/default/theme.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/themes/default/var.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/themes/elegant/theme.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/themes/elegant/var.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/themes/simple/theme.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/themes/simple/var.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/buttons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/charts.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/datatable.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/demo.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/direction.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/error_page.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/form_elements.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/horizontal_menu.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/layout.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/message_notifications.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/misc.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/plugin.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/portlets.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/rtl.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/search_results.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/slider.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/tables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/tabs_accordians.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/tiles.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/timeline.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/typo.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/user_profile.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/modules/vector_maps.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/responsive.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/themes/coporate/theme.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/themes/coporate/var.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/themes/default/theme.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/themes/default/var.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/themes/elegant/theme.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/themes/elegant/var.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/themes/simple/theme.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/webarch_core/scss/themes/simple/var.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/welcome.coffee" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/img/Jcrop.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/img/krsz.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/img/krsz2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/img/logo2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/img/used.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.env" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/camera_items_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/camera_models_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/lens_items_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/lens_models_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/bootstrap_flash_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/admin.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/application_record.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/camera_item.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/camera_model.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/ckeditor/asset.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/ckeditor/attachment_file.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/ckeditor/picture.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/lens_item.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/lens_model.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/policies/application_policy.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/uploaders/ckeditor_attachment_file_uploader.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/uploaders/ckeditor_picture_uploader.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/application/_analytics.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/camera_items/_form.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/camera_items/edit.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/camera_items/index.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/camera_items/new.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/camera_items/show.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/camera_models/_table.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/camera_models/index.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/camera_models/select_camera_models.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/camera_models/show.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/mailer/password_change.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_links.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.text.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/lens_items/_form.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/lens_items/_lens_items.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/lens_items/crop_image.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/lens_items/edit.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/lens_items/new.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/lens_items/show.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/lens_models/_table.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/lens_models/index.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/lens_models/select_lens_models.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/lens_models/show.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pages/.keep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pages/ivideon.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/_form.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/edit.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/index.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/show.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/application_controller_renderer.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/assets.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/backtrace_silencers.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/carrierwave.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/ckeditor.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/cookies_serializer.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/devise.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/errors.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/filter_parameter_logging.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/image_optim.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/inflections.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/json_encoding.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/kaminari.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/mime_types.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/new_framework_defaults.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/rack_mini_profiler.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/rails_admin.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/redis.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/session_store.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/simple_form.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/simple_form_bootstrap.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/support.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/initializers/wrap_parameters.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20161104091723_create_delayed_jobs.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20161104121733_create_ckeditor_assets.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20161104121734_devise_create_users.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20161104121735_create_lens_models.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20161104121736_create_camera_models.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20161104121737_create_lens_items.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20161104121738_create_camera_items.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20170224192934_devise_create_admins.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20170224193155_add_admin_to_users.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/seeds/.keep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/seeds/01_lens_model.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/seeds/02_camera_model.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/webarch_core/less/mixins.less" afterPath="$PROJECT_DIR$/app/assets/webarch_core/less/mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/secrets.yml" afterPath="$PROJECT_DIR$/config/secrets.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/webarch_plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js" afterPath="$PROJECT_DIR$/vendor/assets/webarch_plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/webarch_plugins/ckeditor/ckeditor.js" afterPath="$PROJECT_DIR$/vendor/assets/webarch_plugins/ckeditor/ckeditor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/webarch_plugins/ckeditor/ckeditor.min.js" afterPath="$PROJECT_DIR$/vendor/assets/webarch_plugins/ckeditor/ckeditor.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/webarch_plugins/jquery-datatable/extra/css/TableTools.css" afterPath="$PROJECT_DIR$/vendor/assets/webarch_plugins/jquery-datatable/extra/css/TableTools.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/webarch_plugins/jquery-file-upload/js/jquery.fileupload-ui.js" afterPath="$PROJECT_DIR$/vendor/assets/webarch_plugins/jquery-file-upload/js/jquery.fileupload-ui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/webarch_plugins/jquery-metrojs/MetroJs.js" afterPath="$PROJECT_DIR$/vendor/assets/webarch_plugins/jquery-metrojs/MetroJs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/webarch_plugins/jquery-metrojs/MetroJs.min.js" afterPath="$PROJECT_DIR$/vendor/assets/webarch_plugins/jquery-metrojs/MetroJs.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/webarch_plugins/owl-carousel/owl.theme.css" afterPath="$PROJECT_DIR$/vendor/assets/webarch_plugins/owl-carousel/owl.theme.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -128,22 +136,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="application.haml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            <state relative-caret-position="-1160">
+              <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -160,8 +158,10 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.haml" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/initializers/redis.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
@@ -199,20 +199,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webarch-rails-sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webarch-rails-sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webarch-rails-sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -272,8 +258,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="RailsProjectView" />
     </panes>
   </component>
@@ -284,8 +270,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/db" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/assets" />
+      <recent name="$PROJECT_DIR$/db/migrate" />
+      <recent name="$PROJECT_DIR$/config/initializers" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$/app" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -301,6 +294,98 @@
     </option>
   </component>
   <component name="RunManager" selected="Rails.Development: webarch-rails-sample">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
+      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
+      <module name="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="RailsRunConfigurationType" factoryName="Rails">
       <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
       <module name="" />
@@ -347,6 +432,43 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
       <method />
     </configuration>
     <configuration default="false" name="test: webarch-rails-sample" type="RakeRunConfigurationType" factoryName="Rake">
@@ -465,34 +587,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1494481122808</updated>
-      <workItem from="1494481124912" duration="1134000" />
+      <workItem from="1494481124912" duration="3097000" />
+      <workItem from="1494488147309" duration="352000" />
+      <workItem from="1494522258570" duration="717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1134000" />
+    <option name="totallyTimeSpent" value="4166000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25679544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -508,6 +631,38 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/initializers/redis.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/initializers/redis.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -520,7 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -528,7 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -536,7 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -544,11 +696,98 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/welcome.coffee" />
+    <entry file="file://$PROJECT_DIR$/app/img/.keep" />
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/camera_items_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/bootstrap_flash_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/policies/application_policy.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/secrets.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds/01_lens_model.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="47" column="98" lean-forward="false" selection-start-line="47" selection-start-column="98" selection-end-line="47" selection-end-column="98" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/welcome.coffee">
+    <entry file="file://$PROJECT_DIR$/db/migrate/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20161104091723_create_delayed_jobs.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -556,18 +795,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/config/initializers/initializers/redis.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds/.keep">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20161104121733_create_ckeditor_assets.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170224193155_add_admin_to_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170224192934_devise_create_admins.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20161104121738_create_camera_items.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20161104121737_create_lens_items.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20161104121736_create_camera_models.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20161104121735_create_lens_models.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20161104121734_devise_create_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-448">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        <state relative-caret-position="-1160">
+          <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
           <folding />
         </state>
       </provider>

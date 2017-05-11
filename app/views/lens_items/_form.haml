@@ -1,0 +1,20 @@
+= simple_form_for(@lens_item, html: { class: "form-horizontal"}) do |f|
+  .row
+    .col-sm-6
+      = f.association :lens_model, prompt: "Выберите объектив", label_method: lambda { |lens| "#{lens.brand} #{lens.name}" }, value_method: :id, include_blank: false
+  .row
+    .col-sm-2
+      = f.input :price, label: false, placeholder: 'Введите цену'
+    .col-sm-1
+      = f.input :used, label: 'Б/у'
+    .col-sm-1
+      = f.input :visible, label: 'Видимый'
+    .col-sm-2.btn.btn-primary
+      = f.file_field :image
+  .row
+    .col-sm-6
+      = f.input :description, label: false
+  .row
+    .col-sm-6
+      = f.button :submit, class: 'btn btn-info'
+      = link_to 'Отмена', lens_items_path, class: 'btn btn-danger'

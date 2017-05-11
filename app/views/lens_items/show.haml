@@ -1,0 +1,15 @@
+= link_to 'Редактировать', edit_lens_item_path(@lens_item) if @lens_item.user == current_user
+
+%row.col-xs-6.col-md-3.thumbnail
+  = image_tag @lens_item.image.normal
+  %caption
+    %h3
+      = @lens_item.lens_model.brand + ' ' + @lens_item.lens_model.name
+      = image_tag 'used.jpg', size: '40x40' if @lens_item.used
+    %p
+      %b Цена:
+      %div= @lens_item.price
+      %b Рейтинг:
+      %div= @lens_item.votes_count
+      %b Описание:
+      %div= @lens_item.description

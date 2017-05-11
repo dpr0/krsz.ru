@@ -1,0 +1,35 @@
+%h1 Listing camera_items
+
+%table
+  %thead
+    %tr
+      %th Camera model
+      %th User
+      %th Description
+      %th Price
+      %th Votes count
+      %th Visible
+      %th Used
+      %th Image
+      %th
+      %th
+      %th
+
+  %tbody
+    - @camera_items.each do |camera_item|
+      %tr
+        %td= camera_item.camera_model
+        %td= camera_item.user
+        %td= camera_item.description
+        %td= camera_item.price
+        %td= camera_item.votes_count
+        %td= camera_item.visible
+        %td= camera_item.used
+        %td= camera_item.image
+        %td= link_to 'Show', camera_item
+        %td= link_to 'Edit', edit_camera_item_path(camera_item)
+        %td= link_to 'Destroy', camera_item, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Camera item', new_camera_item_path

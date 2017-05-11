@@ -1,0 +1,21 @@
+%h1 Всепользователи
+
+%table.table
+  %thead
+    %tr
+      %th id
+      %th email
+      %th last_sign_in_at
+      %th created_at
+      %th lens
+      %th cameras
+
+  %tbody
+    - @users.each do |user|
+      %tr
+        %td= user.id
+        %td= link_to user.email, user
+        %td= user.last_sign_in_at.strftime("%d.%m.%Y")
+        %td= user.created_at.strftime("%d.%m.%Y")
+        %td= user.lens_items.size
+        %td= user.camera_items.size

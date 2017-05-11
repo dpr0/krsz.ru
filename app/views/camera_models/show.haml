@@ -1,0 +1,25 @@
+%p#notice= notice
+%b= link_to 'Продать', new_camera_item_path(camera_model: @camera_model)
+
+%p
+  %b Brand:
+  = @camera_model.brand
+%p
+  %b Name:
+  = @camera_model.name
+%p
+  %b Mount:
+  = @camera_model.mount
+%p
+  %b Ff:
+  = @camera_model.ff
+%p
+  %b Weather:
+  = @camera_model.weather
+%p
+  %b Stab:
+  = @camera_model.stab
+
+= link_to 'Edit', edit_camera_model_path(@camera_model)
+\|
+= link_to 'Back', camera_models_path

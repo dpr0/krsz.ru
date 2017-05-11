@@ -1,0 +1,36 @@
+%p#notice= notice
+
+%p
+  %b ID:
+  = @user.id
+%p
+  %b email
+  = @user.email
+%p
+  %b sign_in_count
+  = @user.sign_in_count
+%p
+  %b current_sign_in_at
+  = @user.current_sign_in_at
+%p
+  %b last_sign_in_at
+  = @user.last_sign_in_at
+%p
+  %b current_sign_in_ip
+  = @user.current_sign_in_ip
+%p
+  %b last_sign_in_ip
+  = @user.last_sign_in_ip
+%p
+  %b created_at
+  = @user.created_at
+%p
+  %b updated_at
+  = @user.updated_at
+%p
+  %b admin
+  = @user.admin
+
+= link_to 'Edit', edit_user_path(@user)
+\|
+= link_to 'Back', users_path

@@ -1,0 +1,8 @@
+= form_for @lens_item, url: crop_image_lens_item_path(@lens_item), method: :put do |f|
+  = image_tag @lens_item.image, id: 'crop_image'
+  = f.fields_for :image_crop_data do |c|
+    = c.hidden_field :x
+    = c.hidden_field :y
+    = c.hidden_field :width
+    = c.hidden_field :height
+  = f.submit 'Обрезать изображение!'
