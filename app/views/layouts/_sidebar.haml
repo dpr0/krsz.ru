@@ -1,0 +1,109 @@
+/ BEGIN SIDEBAR
+/ BEGIN MENU
+#main-menu.page-sidebar
+  #main-menu-wrapper.page-sidebar-wrapper.scrollbar-dynamic
+    / BEGIN MINI-PROFILE
+    - if current_user
+      .user-info-wrapper
+        .profile-wrapper
+          %img{:alt => "", "data-src" => image_path('profiles/avatar.jpg'), "data-src-retina" => image_path('profiles/avatar2x.jpg'), :height => "69", :src => image_path('profiles/avatar.jpg'), :width => "69"}/
+        .user-info
+          .greeting Добро пожаловать
+          .username
+            = current_user.firstname
+            %span.semi-bold
+              = current_user.lastname
+          .status
+            Status
+            %a{:href => "#"}
+              .status-icon.green>
+              Online
+    / END MINI-PROFILE
+    / BEGIN SIDEBAR MENU
+    %p.menu-title
+      Категории:
+      %span.pull-right
+        %a{:href => "javascript:;"}
+          %i.fa.fa-refresh
+    %ul
+      / BEGIN SELECTED LINK
+      -#%li.start.active
+      -#  %a{:href => "#"}
+      -#    %i.icon-custom-home
+      -#    %span.title Link 1
+      -#    %span.selected
+      -#    %span.badge.badge-important.pull-right 5
+      / END SELECTED LINK
+      / BEGIN BADGE LINK
+      -#%li
+      -#  %a{:href => "#"}
+      -#    %i.fa.fa-envelope
+      -#    %span.title Link 2
+      -#    %span.badge.badge-disable.pull-right 203
+      / END BADGE LINK
+      / BEGIN SINGLE LINK
+      -#%li
+      -#  %a{:href => "#"}
+      -#    %i.fa.fa-flag
+      -#    %span.title Link 3
+      / END SINGLE LINK
+      / BEGIN ONE LEVEL MENU
+      -#%li
+      -#  %a{:href => "javascript:;"}
+      -#    %i.icon-custom-ui
+      -#    %span.title Link 4
+      -#    %span.arrow
+      -#  %ul.sub-menu
+      -#    %li
+      -#      %a{:href => "#"} Sub Link 1
+      / END ONE LEVEL MENU
+      = render '/layouts/links'
+    / END SIDEBAR MENU
+    / BEGIN SIDEBAR WIDGETS
+    -#.side-bar-widgets
+    -#  / BEGIN FOLDER WIDGET
+    -#  %p.menu-title
+    -#    FOLDER
+    -#    %span.pull-right
+    -#      %a.create-folder{:href => "#"}
+    -#        %i.icon-plus
+    -#  %ul.folders
+    -#    %li
+    -#      %a{:href => "#"}
+    -#        .status-icon.green>
+    -#        Task 1
+    -#    / BEGIN HIDDEN INPUT BOX (FOR ADD FOLDER LINK)
+    -#    %li.folder-input{:style => "display:none"}
+    -#      %input#folder-name.no-boarder.folder-name{:name => "", :placeholder => "Name of folder", :type => "text"}/
+    -#    / END HIDDEN INPUT BOX (FOR ADD FOLDER LINK)
+    -#  / END FOLDER WIDGET
+    -#  / BEGIN PROJECTS WIDGET
+    -#  %p.menu-title PROJECTS
+    -#  / BEGIN EXAMPLE 1
+    -#  .status-widget
+    -#    .status-widget-wrapper
+    -#      .title
+    -#        Project Title
+    -#        %a.remove-widget{:href => "#"}
+    -#          %i.icon-custom-cross
+    -#      %p Project Description
+    -#  / END EXAMPLE 1
+    -#  / END PROJECTS WIDGET
+    .clearfix
+    / END SIDEBAR WIDGETS
+/ BEGIN SCROLL UP HOVER
+%a.scrollup{:href => "#"} Scroll
+/ END SCROLL UP HOVER
+/ END MENU
+/ BEGIN SIDEBAR FOOTER WIDGET
+.footer-widget
+  .progress.transparent.progress-small.no-radius.no-margin
+    .progress-bar.progress-bar-success.animate-progress-bar{"data-percentage" => "56%"}
+  .pull-right
+    .details-status
+      %span.animate-number{"data-animation-duration" => "560", "data-value" => "56%"}
+    - if current_user
+      = link_to destroy_user_session_path, method: :delete do
+        %i.fa.fa-power-off
+/ END SIDEBAR FOOTER WIDGET
+/ END SIDEBAR

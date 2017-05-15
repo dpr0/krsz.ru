@@ -1,54 +1,45 @@
-%p.menu-title
-  Категории:
-  %ul
-    %li.start.active
-      %a{:href => camera_models_path}
-        %i.fa.fa-envelope
-        %span.title Камеры
-        %span.selected
-        %span.badge.pull-right= @camera_models.size
-      %ul.sub-menu
-        %li
-          = link_to select_camera_models_camera_models_path(mount: 'A-mount') do
-            %i.fa.fa-envelope
-            %span.title A-mount
-            %span.badge.pull-right= @camera_models.a_mount_cam.size
-        %li
-          = link_to select_camera_models_camera_models_path(mount: 'E-mount') do
-            %i.fa.fa-envelope
-            %span.title E-mount
-            %span.badge.pull-right= @camera_models.e_mount_cam.size
-    %li.start.active
-      %a{:href => lens_models_path}
-        %i.fa.fa-envelope
-        %span.title Объективы
-        %span.badge.pull-right= @lens_models.size
-      %ul.sub-menu
-        %li
-          = link_to select_lens_models_lens_models_path(mount: 'A-mount') do
-            %i.fa.fa-envelope
-            %span.title A-mount
-            %span.badge.pull-right= @lens_models.a_mount.size
-        %li
-          = link_to select_lens_models_lens_models_path(mount: 'E-mount') do
-            %i.fa.fa-envelope
-            %span.title E-mount
-            %span.badge.pull-right= @lens_models.e_mount.size
-        - @lens_models_brand_count.each do |key, value|
-          %li
-            = link_to select_lens_models_lens_models_path(brand: key) do
-              %i.fa.fa-envelope
-              %span.title= key
-              %span.badge.pull-right= value
+%li.start.active
+  %a{:href => users_path}
+    %i.icon-custom-ui
+    %span.title Пользователи
+%li
+  %a{:href => new_lens_item_path}
+    %i.icon-custom-ui
+    %span.title Продать объектив
+%li
+  %a{:href => new_camera_item_path}
+    %i.icon-custom-ui
+    %span.title Продать фотоаппарат
+%li
+  %a{:href => "javascript:;"}
+    %i.fa.fa-folder-open
+    %span.title Камеры
+    %span.badge.badge-disable.pull-right= @camera_models.size
+  %ul.sub-menu
     %li
-      %a{:href => users_path}
-        %i.fa.fa-envelope
-        %span.title Пользователи
+      = link_to select_camera_models_camera_models_path(mount: 'A-mount') do
+        %span.title A-mount
+        %span.badge.badge-disable.pull-right= @camera_models.a_mount_cam.size
     %li
-      %a{:href => new_lens_item_path}
-        %i.fa.fa-envelope
-        %span.title Продать объектив
+      = link_to select_camera_models_camera_models_path(mount: 'E-mount') do
+        %span.title E-mount
+        %span.badge.badge-disable.pull-right= @camera_models.e_mount_cam.size
+%li
+  %a{:href => "javascript:;"}
+    %i.fa.fa-folder-open
+    %span.title Объективы
+    %span.badge.badge-disable.pull-right= @lens_models.size
+  %ul.sub-menu
     %li
-      %a{:href => new_camera_item_path}
-        %i.fa.fa-envelope
-        %span.title Продать фотоаппарат
+      = link_to select_lens_models_lens_models_path(mount: 'A-mount') do
+        %span.title A-mount
+        %span.badge.badge-disable.pull-right= @lens_models.a_mount.size
+    %li
+      = link_to select_lens_models_lens_models_path(mount: 'E-mount') do
+        %span.title E-mount
+        %span.badge.badge-disable.pull-right= @lens_models.e_mount.size
+    - @lens_models_brand_count.each do |key, value|
+      %li
+        = link_to select_lens_models_lens_models_path(brand: key) do
+          %span.title= key
+          %span.badge.badge-disable.pull-right= value

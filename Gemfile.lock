@@ -48,7 +48,6 @@ GEM
       execjs
     awesome_print (1.7.0)
     bcrypt (3.1.11)
-    bindex (0.5.0)
     bootstrap (4.0.0.alpha6)
       autoprefixer-rails (>= 6.0.3)
       sass (>= 3.4.19)
@@ -331,11 +330,6 @@ GEM
     uniform_notifier (1.10.0)
     warden (1.2.7)
       rack (>= 1.0)
-    web-console (3.5.0)
-      actionview (>= 5.0)
-      activemodel (>= 5.0)
-      bindex (>= 0.4.0)
-      railties (>= 5.0)
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
@@ -397,7 +391,6 @@ DEPENDENCIES
   title
   turbolinks
   uglifier
-  web-console
   whenever
 
 RUBY VERSION
