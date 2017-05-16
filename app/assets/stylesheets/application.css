@@ -23,8 +23,8 @@
 @import 'normalize-rails';
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-@import 'prettify';
-@import 'styles';
+/*@import 'prettify';*/
+/*@import 'styles';*/
 @import 'devise_bootstrap_views';
 @import 'dataTables/bootstrap/3/jquery.dataTables.bootstrap';
 @import 'pace/pace-theme-flash';
@@ -36,5 +36,5 @@
 @import 'dataTables/jquery.dataTables.foundation';
 @import 'dataTables/extras/dataTables.responsive';
 @import 'dataTables/extras/dataTables.tableTools';
-@import 'buttons.dataTables.min';
-@import 'jquery.Jcrop';
+/*@import 'buttons.dataTables.min';*/
+/*@import 'jquery.Jcrop';*/

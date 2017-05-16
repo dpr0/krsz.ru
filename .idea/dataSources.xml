@@ -7,5 +7,37 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/sony_development</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="Rails webarch-rails-sample: development" uuid="af619849-fa20-418b-b9d2-47654f137cfb">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:sony_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails webarch-rails-sample: test" uuid="3fc54d18-3fee-48e1-9d28-cd48df4c194b">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:sony_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails webarch-rails-sample: staging" uuid="30dc30cf-09b5-4de5-9d06-6b93c51789d6">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:sony_production</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails webarch-rails-sample: production" uuid="e01a1dfb-523e-488e-b0f4-42b7a6f8bbd0">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:sony_production</jdbc-url>
+    </data-source>
   </component>
 </project>
