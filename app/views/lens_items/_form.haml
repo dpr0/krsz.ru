@@ -16,11 +16,20 @@
       = f.input :description, label: false
   .row
     .col-sm-6
+      = f.input :used,
+              collection: [[true, 'Б/у'], [false, 'Новый']],
+              label_method: :last,
+              value_method: :first,
+              as: :radio_buttons,
+              item_wrapper_class: 'radio-success',
+              checked: true
+  .row
+    .col-sm-6
       = f.button :submit, class: 'btn btn-info'
       = link_to 'Отмена', lens_items_path, class: 'btn btn-danger'
 
 .radio.radio-success
-  %input#yes{:name => "optionyes", :type => "radio", :value => "yes"}/
-  %label{:for => "yes"} Agree
-  %input#no{:checked => "checked", :name => "optionyes", :type => "radio", :value => "no"}/
-  %label{:for => "no"} Disagree
+  %input#yes{name: "optionyes", type: "radio", value: "yes"}/
+  %label{for: "yes"} Agree
+  %input#no{checked: "checked", name: "optionyes", type: "radio", value: "no"}/
+  %label{for: "no"} Disagree

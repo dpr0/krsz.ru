@@ -11,30 +11,30 @@ class UsersController < ApplicationController
 
   def show
     return unless current_user.admin?
-    redirect_to :back, alert: "Access denied." unless @user == current_user
+    redirect_to :back, alert: 'Access denied.' unless @user == current_user
   end
 
   def edit; end
 
   def update
     if @user.update_attributes(secure_params)
-      redirect_to users_path, notice: "User updated."
+      redirect_to users_path, notice: 'User updated.'
     else
-      redirect_to users_path, alert: "Unable to update user."
+      redirect_to users_path, alert: 'Unable to update user.'
     end
   end
 
   private
 
-    def load_user
-      @user = User.find(params[:id])
-    end
+  def load_user
+    @user = User.find(params[:id])
+  end
 
-    def admin_only
-      redirect_to :back, alert: "Access denied." unless current_user.admin?
-    end
+  def admin_only
+    redirect_to :back, alert: 'Access denied.' unless current_user.admin?
+  end
 
-    def secure_params
-      params.require(:user).permit(:role, :admin)
-    end
+  def secure_params
+    params.require(:user).permit(:role, :admin)
+  end
 end

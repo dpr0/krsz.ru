@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class CreateLensItems < ActiveRecord::Migration[5.0]
   def change
     create_table :lens_items do |t|

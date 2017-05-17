@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class CreateCameraModels < ActiveRecord::Migration[5.0]
   def change
     create_table :camera_models do |t|

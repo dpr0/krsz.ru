@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 Rails.application.routes.draw do
   devise_for :admins
   devise_for :users
@@ -8,7 +9,7 @@ Rails.application.routes.draw do
   get 'welcome/index'
   resources :users
 
-  resources :camera_items  do
+  resources :camera_items do
     member do
       get :crop_image
       put :crop_image

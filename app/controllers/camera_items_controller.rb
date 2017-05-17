@@ -38,11 +38,11 @@ class CameraItemsController < ApplicationController
 
   private
 
-    def set_camera_item
-      @camera_item = CameraItem.find(params[:id])
-    end
+  def set_camera_item
+    @camera_item = CameraItem.find(params[:id])
+  end
 
-    def camera_item_params
-      params.require(:camera_item).permit(:camera_model_id, :user_id, :description, :price, :votes_count, :visible, :used, :image)
-    end
+  def camera_item_params
+    params.require(:camera_item).permit(:camera_model_id, :user_id, :description, :price, :votes_count, :visible, :used, :image)
+  end
 end

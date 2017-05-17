@@ -45,11 +45,11 @@ class LensItemsController < ApplicationController
 
   private
 
-    def set_lens_item
-      @lens_item = LensItem.find(params[:id])
-    end
+  def set_lens_item
+    @lens_item = LensItem.find(params[:id])
+  end
 
-    def lens_item_params
-      params.require(:lens_item).permit(:lens_model_id, :user_id, :description, :price, :votes_count, :visible, :used, :image)
-    end
+  def lens_item_params
+    params.require(:lens_item).permit(:lens_model_id, :user_id, :description, :price, :votes_count, :visible, :used, :image)
+  end
 end
