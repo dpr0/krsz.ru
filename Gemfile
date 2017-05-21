@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby '2.4.1'
+ruby '2.3.1'
 gem 'awesome_print', require: 'ap'
 gem 'delayed_job_active_record'
 gem 'dotenv-rails'
