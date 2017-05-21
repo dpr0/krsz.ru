@@ -14,12 +14,19 @@ class LensItemsController < ApplicationController
     respond_with(@lens_item)
   end
 
+  def task_show
+    @task = Cc::Task.find_by(processInstanceId: params[:id])
+    respond_with(@lens_item)
+  end
+
   def new
+    Cc::ProcessDefinition.get('KrszProcess').start_submit(SecureRandom.uuid, variables, serialize_json_as_object: true)
     @lens_item = current_user.lens_items.new(lens_model_id: params[:lens_model])
     respond_with(@lens_item)
   end
 
-  def edit; end
+  def edit
+  end
 
   def create
     @lens_item = current_user.lens_items.create(lens_item_params)
@@ -44,6 +51,10 @@ class LensItemsController < ApplicationController
   end
 
   private
+
+  def variables
+    {}
+  end
 
   def set_lens_item
     @lens_item = LensItem.find(params[:id])

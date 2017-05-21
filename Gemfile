@@ -51,9 +51,13 @@ gem 'whenever'
 # gem 'paperclip'
 # gem 'react-rails'
 # gem 'sidekiq'
+# gem 'cc', path: '../../../asamp/cc'
+git_source(:dpro) { |repo_name| "git@gitlab.com:dvitvitskiypro/#{repo_name}.git" }
+gem 'cc', dpro: 'cc'
+
 
 group :assets do
-  # gem 'sass-rails'
+  gem 'sass-rails'
   gem 'autoprefixer-rails'
   gem 'coffee-rails'
   gem 'uglifier'
@@ -71,7 +75,7 @@ group :development do
   gem 'spring-commands-rspec'
   gem 'stackprof'
   gem 'web-console'
-  # gem 'pry-byebug'
+  gem 'byebug'
   # gem 'pry-rails'
   # gem 'pry-doc'
   # gem 'pry-rescue'
@@ -81,12 +85,12 @@ group :development do
   # gem 'binding_of_caller'
   gem 'hirb'
   gem 'listen'
-  # gem 'capistrano',          require: false
-  # gem 'capistrano-bundler',  require: false
-  # gem 'capistrano-rails',    require: false
-  # gem 'capistrano-rvm',      require: false
-  # gem 'capistrano-sidekiq',  require: false
-  # gem 'capistrano3-unicorn', require: false
+  gem 'capistrano',          require: false
+  gem 'capistrano-bundler',  require: false
+  gem 'capistrano-rails',    require: false
+  gem 'capistrano-rvm',      require: false
+  gem 'capistrano-sidekiq',  require: false
+  gem 'capistrano3-unicorn', require: false
 end
 # group :development, :test do
 #   gem 'factory_girl_rails'
