@@ -178,6 +178,7 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (2.1.0)
+    kgio (2.11.0)
     less (2.6.0)
       commonjs (~> 0.2.7)
     less-rails (2.8.0)
@@ -272,6 +273,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rainbow (2.2.2)
       rake
+    raindrops (0.18.0)
     rake (12.0.0)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
@@ -373,6 +375,9 @@ GEM
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.2.1)
+    unicorn (5.3.0)
+      kgio (~> 2.6)
+      raindrops (~> 0.7)
     uniform_notifier (1.10.0)
     warden (1.2.7)
       rack (>= 1.0)
@@ -439,6 +444,7 @@ DEPENDENCIES
   responders
   rmagick
   rubocop
+  sidekiq
   simple_form
   spring
   spring-commands-rspec
@@ -448,6 +454,7 @@ DEPENDENCIES
   title
   turbolinks
   uglifier
+  unicorn
   web-console
   whenever
 

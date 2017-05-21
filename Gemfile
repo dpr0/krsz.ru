@@ -47,11 +47,10 @@ gem 'sprockets-rails', require: 'sprockets/railtie'
 # gem 'omniauth-twitter'
 # gem 'omniauth-vkontakte'
 gem 'whenever'
-# gem 'unicorn'
+gem 'unicorn'
 # gem 'paperclip'
 # gem 'react-rails'
-# gem 'sidekiq'
-# gem 'cc', path: '../../../asamp/cc'
+gem 'sidekiq'
 git_source(:dpro) { |repo_name| "git@gitlab.com:dvitvitskiypro/#{repo_name}.git" }
 gem 'cc', dpro: 'cc'
 
