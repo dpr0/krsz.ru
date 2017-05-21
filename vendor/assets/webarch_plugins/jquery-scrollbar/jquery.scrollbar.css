@@ -62,7 +62,8 @@
     padding: 2px;
     position: relative !important;
     top: 0;
-    width: 100% !important;
+    width: 100%;
+    /*width: 100% !important;*/
 }
 .scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
     height: 0;

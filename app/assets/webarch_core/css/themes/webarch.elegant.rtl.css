@@ -9307,7 +9307,8 @@ body.rtl .footer-widget {
     margin-right: 0;
   }
   .header-seperation {
-    width: 100% !important;
+    /*width: 100% !important;*/
+    width: 100%;
     display: block !important;
     position: fixed;
     z-index: 999;
@@ -9607,7 +9608,8 @@ body.rtl .footer-widget {
     margin-right: -90px;
   }
   .header-seperation {
-    width: 100% !important;
+    /*width: 100% !important;*/
+    width: 100%;
     z-index: 999;
     text-align: center;
     min-height: 60px;
