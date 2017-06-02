@@ -61,6 +61,7 @@ GEM
       execjs
     awesome_print (1.7.0)
     bcrypt (3.1.11)
+    bindata (1.8.3)
     bindex (0.5.0)
     bootstrap (4.0.0.alpha6)
       autoprefixer-rails (>= 6.0.3)
@@ -193,6 +194,7 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
+    log_switch (1.0.0)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.5)
@@ -230,6 +232,7 @@ GEM
     ox (2.5.0)
     parser (2.4.0.0)
       ast (~> 2.2)
+    parslet (1.8.0)
     pg (0.20.0)
     powerpack (0.1.1)
     progress (3.3.1)
@@ -301,6 +304,13 @@ GEM
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
     rmagick (2.16.0)
+    rtp (0.1.5)
+      bindata (~> 1.4)
+      log_switch (>= 0.4.0)
+    rtsp (0.4.5)
+      parslet (>= 1.1.0)
+      rtp (>= 0.1.3)
+      sdp (~> 0.2.6)
     rubocop (0.48.1)
       parser (>= 2.3.3.1, < 3.0)
       powerpack (~> 0.1)
@@ -318,6 +328,8 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    sdp (0.2.9)
+      parslet (>= 1.1.0)
     sexp_processor (4.9.0)
     sidekiq (5.0.0)
       concurrent-ruby (~> 1.0)
@@ -443,6 +455,7 @@ DEPENDENCIES
   remotipart
   responders
   rmagick
+  rtsp
   rubocop
   sidekiq
   simple_form

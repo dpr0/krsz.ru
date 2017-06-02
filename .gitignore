@@ -17,7 +17,7 @@
 /tmp
 
 vendor/assets/webarch_core/
-.idea
+/.idea
 !.keep
 *.DS_Store
 *.swo

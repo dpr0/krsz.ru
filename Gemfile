@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby '2.3.1'
+ruby '2.4.1'
 gem 'awesome_print', require: 'ap'
 gem 'delayed_job_active_record'
 gem 'dotenv-rails'
@@ -51,6 +51,7 @@ gem 'unicorn'
 # gem 'paperclip'
 # gem 'react-rails'
 gem 'sidekiq'
+gem 'rtsp'
 git_source(:dpro) { |repo_name| "git@gitlab.com:dvitvitskiypro/#{repo_name}.git" }
 gem 'cc', dpro: 'cc'
 

@@ -122,23 +122,9 @@
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bundle" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="rbenv: 2.3.1" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="yacc (v[path]) [path][gem]">
-        <CLASSES>
-          <root url="file://$USER_HOME$/asamp/yacc/bin" />
-          <root url="file://$USER_HOME$/asamp/yacc/lib" />
-          <root url="file://$USER_HOME$/asamp/yacc/.idea" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://$USER_HOME$/asamp/yacc/bin" />
-          <root url="file://$USER_HOME$/asamp/yacc/lib" />
-          <root url="file://$USER_HOME$/asamp/yacc/.idea" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.14.6, ruby-2.0.0-p648) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.14.6, rbenv: 2.3.1) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />
