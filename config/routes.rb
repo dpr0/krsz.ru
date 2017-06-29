@@ -1,10 +1,28 @@
 # frozen_string_literal: true
-
 Rails.application.routes.draw do
+  use_doorkeeper
   devise_for :admins
   devise_for :users
-  # devise_for :admins
-  # devise_for :users
+
+  namespace :api do
+    namespace :v1 do
+      resource :profiles do
+        get :me,            on: :collection
+        get :users,         on: :collection
+        get :lens_items,    on: :collection
+        get :lens_models,   on: :collection
+        get :camera_items,  on: :collection
+        get :camera_models, on: :collection
+      end
+      resources :lens_models do
+        resources :lens_items
+      end
+      resources :camera_models do
+        resources :camera_items
+      end
+    end
+  end
+
   root to: 'welcome#index'
   get 'welcome/index'
   resources :users
@@ -23,13 +41,10 @@ Rails.application.routes.draw do
   end
 
   resources :camera_models do
-    collection do
-      get :select_camera_models
-    end
+    get :select_camera_models, on: :collection
   end
+
   resources :lens_models do
-    collection do
-      get :select_lens_models
-    end
+    get :select_lens_models, on: :collection
   end
 end

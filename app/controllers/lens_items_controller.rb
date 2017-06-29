@@ -20,7 +20,7 @@ class LensItemsController < ApplicationController
   end
 
   def new
-    Cc::ProcessDefinition.get('KrszProcess').start_submit(SecureRandom.uuid, variables, serialize_json_as_object: true)
+    # Cc::ProcessDefinition.get('KrszProcess').start_submit(SecureRandom.uuid, variables, serialize_json_as_object: true)
     @lens_item = current_user.lens_items.new(lens_model_id: params[:lens_model])
     respond_with(@lens_item)
   end

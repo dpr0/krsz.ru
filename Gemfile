@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby '2.4.1'
+ruby '2.3.1'
 gem 'awesome_print', require: 'ap'
 gem 'delayed_job_active_record'
 gem 'dotenv-rails'
@@ -42,10 +42,10 @@ gem 'rails-assets-tether'
 gem 'remotipart'
 gem 'rmagick'
 gem 'sprockets-rails', require: 'sprockets/railtie'
-# gem 'omniauth'
-# gem 'omniauth-facebook'
-# gem 'omniauth-twitter'
-# gem 'omniauth-vkontakte'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+gem 'omniauth-vkontakte'
 gem 'whenever'
 gem 'unicorn'
 # gem 'paperclip'
@@ -53,8 +53,13 @@ gem 'unicorn'
 gem 'sidekiq'
 gem 'rtsp'
 git_source(:dpro) { |repo_name| "git@gitlab.com:dvitvitskiypro/#{repo_name}.git" }
-gem 'cc', dpro: 'cc'
-
+# gem 'cc', dpro: 'cc'
+gem 'cc', path: '../cc'
+gem 'doorkeeper'
+gem 'active_model_serializers'
+gem 'oj'
+gem 'oj_mimic_json'
+gem 'anycable-rails'
 
 group :assets do
   # gem 'sass-rails'
@@ -92,22 +97,23 @@ group :development do
   gem 'capistrano-sidekiq',  require: false
   gem 'capistrano3-unicorn', require: false
 end
-# group :development, :test do
-#   gem 'factory_girl_rails'
-#   gem 'bundler-audit',       require: false
-#   gem 'rspec-rails'
-# end
-# group :test do
+group :development, :test do
+  gem 'factory_girl_rails'
+  gem 'bundler-audit',       require: false
+  gem 'rspec-rails'
+end
+group :test do
 #   gem 'fuubar'
 #   # gem 'capybara-webkit'
-#   gem 'database_cleaner'
+  gem 'database_cleaner'
 #   gem 'formulaic'
 #   gem 'launchy'
 #   gem 'shoulda-matchers'
 #   gem 'simplecov',           require: false
 #   gem 'timecop'
 #   gem 'webmock'
-# end
+  gem 'json_spec'
+end
 # group :staging, :production do
 #   gem 'rack-timeout'
 # end
