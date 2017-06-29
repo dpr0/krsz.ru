@@ -1,7 +1,59 @@
 -#= image_tag @lens_model.image
 %h3
   = @lens_model.mount + ' ' + @lens_model.brand + ' ' + @lens_model.name
-  %b= link_to 'Продать', new_lens_item_path(lens_model: @lens_model)
+%h1= link_to 'Продать', new_lens_item_path(lens_model: @lens_model)
+
+%h4
+  %div
+    %b ID:
+    = @lens_model.id
+  %div
+    %b Брэнд:
+    = @lens_model.brand
+  %div
+    %b Модель:
+    = @lens_model.name
+  %div
+    %b Байонет:
+    = @lens_model.mount
+  - if @lens_model.frmin != @lens_model.frmax
+    %div
+      %b Минимальное фокусное расстояние:
+      = @lens_model.frmin
+    %div
+      %b Максимальное фокусное расстояние:
+      = @lens_model.frmax
+  - else
+    %div
+      %b Фокусное расстояние:
+      = @lens_model.frmin
+  - if @lens_model.diafmin != @lens_model.diafmax
+    %div
+      %b Диафрагма мин:
+      = @lens_model.diafmin
+    %div
+      %b Диафрагма макс:
+      = @lens_model.diafmax
+  - else
+    %div
+      %b Диафрагма:
+      = @lens_model.diafmin
+  %div
+    %b Фикс:
+    = @lens_model.fix?
+  %div
+    %b Полный кадр:
+    = @lens_model.ff?
+  %div
+    %b Макро:
+    = @lens_model.macro?
+  %div
+    %b Пылевлагозащита:
+    = @lens_model.weather?
+  %div
+    %b Мотор:
+    = @lens_model.afdrive
+
 %div.col-xs-12
   %div.panel.panel-default
     %div
