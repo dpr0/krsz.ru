@@ -56,7 +56,7 @@ git_source(:dpro) { |repo_name| "git@gitlab.com:dvitvitskiypro/#{repo_name}.git"
 gem 'cc', dpro: 'cc'
 # gem 'cc', path: '../cc'
 gem 'doorkeeper'
-gem 'active_model_serializers'
+# gem 'active_model_serializers'
 gem 'oj'
 gem 'oj_mimic_json'
 gem 'anycable-rails'

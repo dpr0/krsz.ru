@@ -5,7 +5,7 @@ require 'application_responder'
 class ApplicationController < ActionController::Base
   self.responder = ApplicationResponder
   respond_to :html
-  serialization_scope :view_context
+  # serialization_scope :view_context
 
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :load_lens_and_cameras
