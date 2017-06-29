@@ -1,5 +1,6 @@
-PATH
-  remote: ../cc
+GIT
+  remote: git@gitlab.com:dvitvitskiypro/cc.git
+  revision: 4be06dbd03403782093d78929647674cab45841b
   specs:
     cc (0.1.0)
       activemodel
