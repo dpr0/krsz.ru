@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170618092201) do
+ActiveRecord::Schema.define(version: 20170701083907) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,10 +52,17 @@ ActiveRecord::Schema.define(version: 20170618092201) do
     t.string   "name"
     t.string   "mount"
     t.boolean  "ff"
-    t.boolean  "weather"
-    t.string   "stab"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.string   "full_name"
+    t.string   "dyxum_link"
+    t.string   "dyxum_img_link"
+    t.string   "release_year"
+    t.string   "status"
+    t.string   "viewfinder"
+    t.string   "format"
+    t.string   "effective_pixels"
+    t.string   "max_resolution"
   end
 
   create_table "ckeditor_assets", force: :cascade do |t|

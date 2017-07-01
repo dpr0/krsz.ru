@@ -549,6 +549,7 @@ DEPENDENCIES
   mailcatcher
   meta_request
   mini_magick
+  nokogiri
   normalize-rails
   oj
   oj_mimic_json

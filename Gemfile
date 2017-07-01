@@ -60,6 +60,7 @@ gem 'doorkeeper'
 gem 'oj'
 gem 'oj_mimic_json'
 gem 'anycable-rails'
+gem 'nokogiri'
 
 group :assets do
   # gem 'sass-rails'
