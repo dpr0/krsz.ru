@@ -11,14 +11,28 @@
   %b Mount:
   = @camera_model.mount
 %p
-  %b Ff:
-  = @camera_model.ff
+  %b release_year:
+  = @camera_model.release_year
 %p
-  %b Weather:
-  = @camera_model.weather
+  %b status:
+  = @camera_model.status
 %p
-  %b Stab:
-  = @camera_model.stab
+  %b viewfinder:
+  = @camera_model.viewfinder
+%p
+  %b format:
+  = @camera_model.format
+%p
+  %b effective_pixels:
+  = @camera_model.effective_pixels
+%p
+  %b max_resolution:
+  = @camera_model.max_resolution
+%p
+  = link_to 'DYXUM', @camera_model.dyxum_link
+%p
+  - (1..10).each do |x|
+    = image_tag("http://www.dyxum.com#{@camera_model.dyxum_img_link[0..-8] + x.to_s + '.jpg'}")
 
 = link_to 'Edit', edit_camera_model_path(@camera_model)
 \|

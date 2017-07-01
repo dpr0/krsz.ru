@@ -1,13 +1,25 @@
 %table.table-condensed.table-bordered.display
   %thead
     %tr
+      %th
       %th Бренд
       %th Камера
+      %th Год
+      %th Видоискатель
+      %th Формат
+      %th Матрица
+      %th Разрешение
       %th Кол-во
   %tbody
     - camera_models.each do |camera_model|
       %tr
+        %td= link_to image_tag("http://www.dyxum.com#{camera_model.dyxum_img_link}"), camera_model
         %td.dt-body-right= camera_model.brand
-        %td= link_to camera_model.name, camera_model
+        %td= camera_model.name
+        %td= camera_model.release_year
+        %td= camera_model.viewfinder
+        %td= camera_model.format
+        %td= camera_model.effective_pixels
+        %td= camera_model.max_resolution
         %td.dt-body-center
           %span.badge= camera_models_items_count[camera_model.id]
