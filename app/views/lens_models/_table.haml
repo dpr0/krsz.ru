@@ -1,6 +1,7 @@
 %table.table-condensed.table-bordered.display
   %thead
     %tr
+      %th dyxum_img_link
       %th Байонет
       %th Company
       %th Объектив
@@ -8,10 +9,41 @@
       %th ФР(max)
       %th Д(min)
       %th Д(max)
+      %th product_code
+      %th status
+      %th release_year
+      %th d_type_lens
+      %th slt_compatible
+      %th afdrive
+      %th focus_design
+      %th stab
+      %th weather
+      %th frmin
+      %th frmax
+      %th diafmin
+      %th diafmax
+      %th diafmin2
+      %th diafmax2
+      %th fix
+      %th elements_group
+      %th aperture_blades
+      %th mdf
+      %th filter_rotate_focusing
+      %th filter_rotate_zooming
+      %th magnification
+      %th filter_diameter
+      %th hood
+      %th color
+      %th length
+      %th weight
+      -#%th dyxum_link
+      -#%th dyxum_review_link
       %th Кол-во
+
   %tbody
     - lens_models.each do |lens_model|
       %tr
+        %td= image_tag lens_model.dyxum_img_link
         %td= lens_model.mount
         %td.dt-body-right= lens_model.brand
         %td= link_to lens_model.name, lens_model
@@ -19,5 +51,30 @@
         %td.dt-body-center= lens_model.frmax if lens_model.frmin != lens_model.frmax
         %td.dt-body-center= lens_model.diafmin
         %td.dt-body-center= lens_model.diafmax if lens_model.diafmin != lens_model.diafmax
+        %td= lens_model.product_code
+        %td= lens_model.status
+        %td= lens_model.release_year
+        %td= lens_model.d_type_lens
+        %td= lens_model.slt_compatible
+        %td= lens_model.afdrive
+        %td= lens_model.focus_design
+        %td= lens_model.stab
+        %td= lens_model.weather
+        %td= lens_model.diafmin2
+        %td= lens_model.diafmax2
+        %td= lens_model.fix
+        %td= lens_model.elements_group
+        %td= lens_model.aperture_blades
+        %td= lens_model.mdf
+        %td= lens_model.filter_rotate_focusing
+        %td= lens_model.filter_rotate_zooming
+        %td= lens_model.magnification
+        %td= lens_model.filter_diameter
+        %td= lens_model.hood
+        %td= lens_model.color
+        %td= lens_model.length
+        %td= lens_model.weight
+        -#%td= lens_model.dyxum_link
+        -#%td= lens_model.dyxum_review_link
         %td.dt-body-center
           %span.badge= lens_models_items_count[lens_model.id]
