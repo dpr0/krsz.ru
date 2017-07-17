@@ -16,4 +16,13 @@ class LensModelsController < ApplicationController
   def select_lens_models
     @select_lens_models = LensModel.where(brand_or_mount)
   end
+
+  def edit_index
+    respond_with(@lens_models)
+  end
+
+  def update_sony_forum_link
+    lens = LensModel.find(params[:id])
+    lens.update(sony_forum_link: params[:link])
+  end
 end

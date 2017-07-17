@@ -4,55 +4,59 @@
 %h1= link_to 'Продать', new_lens_item_path(lens_model: @lens_model)
 
 %h4
-  %div
-    %b ID:
-    = @lens_model.id
-  %div
-    %b Брэнд:
-    = @lens_model.brand
-  %div
-    %b Модель:
-    = @lens_model.name
-  %div
-    %b Байонет:
-    = @lens_model.mount
-  - if @lens_model.frmin != @lens_model.frmax
-    %div
-      %b Минимальное фокусное расстояние:
-      = @lens_model.frmin
-    %div
-      %b Максимальное фокусное расстояние:
-      = @lens_model.frmax
-  - else
-    %div
-      %b Фокусное расстояние:
-      = @lens_model.frmin
-  - if @lens_model.diafmin != @lens_model.diafmax
-    %div
-      %b Диафрагма мин:
-      = @lens_model.diafmin
-    %div
-      %b Диафрагма макс:
-      = @lens_model.diafmax
-  - else
-    %div
-      %b Диафрагма:
-      = @lens_model.diafmin
-  %div
-    %b Фикс:
-    = @lens_model.fix?
-  %div
-    %b Полный кадр:
-    = @lens_model.ff?
-  %div
-    %b Макро:
-    = @lens_model.macro?
-  %div
-    %b Пылевлагозащита:
-    = @lens_model.weather?
-  %div
-    %b Мотор:
-    = @lens_model.afdrive
+  %div product_code
+  %p= @lens_model.product_code
+  %div status
+  %p= @lens_model.status
+  %div release_year
+  %p= @lens_model.release_year
+  %div d_type_lens
+  %p= @lens_model.d_type_lens
+  %div slt_compatible
+  %p= @lens_model.slt_compatible
+  %div afdrive
+  %p= @lens_model.afdrive
+  %div focus_design
+  %p= @lens_model.focus_design
+  %div stab
+  %p= @lens_model.stab
+  %div weather
+  %p= @lens_model.weather
+  %div diafmin2
+  %p= @lens_model.diafmin2
+  %div diafmax2
+  %p= @lens_model.diafmax2
+  %div fix
+  %p= @lens_model.fix
+  %div elements_group
+  %p= @lens_model.elements_group
+  %div aperture_blades
+  %p= @lens_model.aperture_blades
+  %div mdf
+  %p= @lens_model.mdf
+  %div filter_rotate_focusing
+  %p= @lens_model.filter_rotate_focusing
+  %div filter_rotate_zooming
+  %p= @lens_model.filter_rotate_zooming
+  %div magnification
+  %p= @lens_model.magnification
+  %div filter_diameter
+  %p= @lens_model.filter_diameter
+  %div hood
+  %p= @lens_model.hood
+  %div color
+  %p= @lens_model.color
+  %div length
+  %p= @lens_model.length
+  %div weight
+  %p= @lens_model.weight
+  %p= link_to 'DYXUM', @lens_model.dyxum_link
+  %p= link_to 'DYXUM review', @lens_model.dyxum_review_link
+  %p= link_to 'SONY forum', @lens_model.sony_forum_link
+  %div Кол-во
+  %p= @lens_models_items_count[@lens_model.id]
+  - (1..10).each do |x|
+    = image_tag("#{@lens_model.dyxum_img_link[0..-8] + x.to_s + '.jpg'}")
 
 %div.col-xs-12
   %div.panel.panel-default

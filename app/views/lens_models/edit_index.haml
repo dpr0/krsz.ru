@@ -1,0 +1,588 @@
+%table{'vertical-align' => 'top'}
+  %tbody
+    %tr
+      %td
+        %table
+          %tbody
+            - @lens_models.each do |lens_model|
+              %tr
+                = form_tag(update_sony_forum_link_lens_model_path(lens_model), method: :post, remote: true) do
+                  %td= lens_model.brand
+                  %td= link_to lens_model.name, lens_model.sony_forum_link
+                  %td= lens_model.mount == 'A-mount' ? 'A' : 'E'
+                  %td= text_field_tag :link, lens_model.sony_forum_link, class: 'form-control input-sm'
+                  %td= submit_tag('Обновить', class: 'btn btn-primary btn-xs btn-mini')
+      %td{'valign' => 'top'}
+        %ul
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=16527"} Sony 16-35/2.8 ZA T* SSM (Vario-Sonnar)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=8955"} Sony 16-80/3.5-4.5 ZA T*(APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=30088"} Sony 24/2 ZA T* SSM (Distagon)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=12970"} Sony 24-70/2.8 ZA T* SSM (Vario Sonnar)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=63681"} Sony 50/1.4 ZA T* SSM (Planar)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=8677"} Sony 85/1.4 ZA T* (Planar)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=9436"} Sony 135/1.8 ZA T* (Sonnar)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=12099"} Minolta 17-35/3.5
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=12270"} Minolta 28-70/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=9522"} Sony & Minolta 35/1.4
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=9444"} Sony & Konika-Minolta 70-200/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13358"} Sony 70-300/4.5-5.6
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=16522"} Sony 70-400/4-5.6
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13463"} Minolta 80-200/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=7893"} Minolta 85/1.4 (все версии)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=10138"} Minolta 85/1.4 или Carl Zeiss 85/1.4
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=9179"} Sony & Minolta 135/2.8 [T4.5]
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13608"} Minolta 200/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=16257"} Minolta 200mm f/4
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=31280"} Minolta & Sony 300/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=14143"} Minolta 300/4
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=73398"} Minolta 400/4.5
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=18663"} Sony & Minolta 500/8 (Reflex)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=55974"} Sony 500/4 и Minolta 600/4
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=26483"} Sony 30/2.8 Macro DT
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=8968"} Sony & Minolta 50/2.8 Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=53649"} Minolta 50mm AF 1:3.5 Macro
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/minolta-af-100-2-8-macro.406/"} Sony & Minolta 100mm F2.8 Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=16257"} Minolta 200mm f/4G Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13824"} SIGMA 24 mm f/1.8 EX DG Aspherical Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=11893"} Sigma 50/2.8 EX Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=21210"} Tamron 60/2 Di II Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13172"} Sigma AF 70/2.8 macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13440"} Tamron 70-200/2.8 Di LD [IF] Macro
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/tamron-sp-af-90mm-f2-5-52em.58746/"} Tamron SP AF 90F2.5 macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=11969"} Tamron 90/2.8 DI Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=12690"} Sigma 105/2.8 Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=41857"} Sigma - 180 F3.5 EX DG IF APO macro
+          %li
+            %a.externalLink{:href => "http://www.forum.sony-club.ru/showthread.php?t=12709"} Tamron 180 F3.5 Di LD IF Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=35147"} Sigma 10mm F2.8 EX DC (Fish-Eye) (APS-C)
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/sigma-af-15-mm-f-2-8-ex-dg-diagonal-fisheye.59073/"} Sigma 15mm F2.8 EX DG Diagonal Fish-Eye
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=7580"} Sony & Minolta 16/2.8 (Fish-Eye)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=11048"} Sigma 20/1.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=10467"} Minolta/Sony AF 20/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=11321"} Sony & Minolta 20/2.8 vs Sigma 20/1.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=30088"} Sony 24/2 ZA T* SSM (Distagon)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13824"} Sigma 24 mm f/1.8 EX DG Aspherical Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?p=186332"} Sigma (Quantaray) 24mm f/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=8728"} Minolta 24/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=8143"} Все о Minolta 28/2
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=7991"} Sony & Minolta 28/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=71892"} Sigma 28/1,8 EX DG ASP
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13805"} Sigma 30/1.4 (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=70772"} Sigma 30/1.4 DC HSM Art
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=26483"} Sony 30/2.8 Macro DT
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=9522"} Sony & Minolta 35/1.4
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=62331"} Sigma 35/1.4 DG HSM
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=34034"} Sony DT 35/1.8 SAM
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=7432"} Minolta 35/2
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/vse-o-sigma-50mm-f1-4-art.44260/"} Sigma 50F1.4 Art
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13832"} Sigma 50/1.4 EX DG HSM (!)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=11893"} Sigma 50/2.8 EX Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=11347"} Sony & Minolta 50/1.4
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=11240"} Minolta 50/1.7
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=22522"} Sony DT 50/1.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=8968"} Sony & Minolta 50/2.8 Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=53649"} Minolta 50mm AF 1:3.5 Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=21210"} Tamron 60/2 Di II Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13172"} Sigma AF 70/2.8 macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=20603"} Samyang/Rokinon/Vivitar/Polar/Bower/Opteka/Falcon 85mm f/1.4 Aspherical IF (MF)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=8677"} Sony 85/1.4
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=7893"} Minolta 85/1.4 (все версии)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=30063"} SIGMA 85/1.4 EX DG HSM
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=34035"} Sony 85/2.8 SAMy 85/2.8 SAM
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/statja-novyj-obektiv-tamron-sp-85mm-f-1-8-di-vc-usd-dlja-sony-alpha.54572/"} Tamron 85F1.8 USD
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=11969"} Tamron 90/2.8 DI Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=14603"} Minolta 100/2
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=9296"} Minolta 100/2.8
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/minolta-af-100-2-8-macro.406/"} Sony & Minolta 100mm F2.8 Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=12690"} Sigma 105/2.8 Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=9436"} Sony 135/1.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=9179"} Sony & Minolta STF 135/2.8 [T4.5]
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=8445"} Minolta 135/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=12709"} Tamron 180/3.5 Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=41857"} Sigma 180/3.5 Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13608"} Minolta 200/2.8 G HS APO
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=31280"} Minolta & Sony 300/2.8 G
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=14143"} Minolta 300/4 G APO HS
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=73398"} Minolta 400/4.5 APO HS
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=18663"} Sony & Minolta 500/8 (Reflex)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=55974"} Sony 500/4 G SSM  Minolta 600/4 G APO HS
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=37320"} Sigma 8-16 F/4.5-5.6 DC HSM (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=46138"} Sigma 10-20 F/3.5 EX DC HSM (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=8849"} Sigma 10-20 F/4-5.6 EX DC (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13781"} Tamron 10-24 F/3.5-4.5 Di II (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=29534"} Tokina 11-16 F/2.8 (AT-X 116 PRO DX) (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=9921"} Sony 11-18 F/4.5-5.6
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=9317"} Sigma 12-24 F/4.5-5.6 vs Sigma 10-20/4-5.6
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=69471"} Sigma 15-30 F/3.5-4.5 EX
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=73013&page=2"} Tamron 15-30 F/2.8
+          %li
+            %a.externalLink{:href => "http://www.forum.sony-club.ru/showthread.php?t=16527"} Sony 16-35 F/2.8 CZ
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=48775"} Sony 16-50 F/2.8 SSM
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=8955"} Sony 16-80 F/3.5-4.5 CZ
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13768"} Sony 16-105 F/3.5-5.6
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=70935"} Tamron 16-300 F/3.5-6.3 (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=12099"} Minolta 17-35 F/3.5 G
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=11946"} Tamron/Minolta 17-35 F/2.8-4
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=11910"} Tamron 17-50 F/2.8 XR Di II LD (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=37244"} Sigma AF 17-50mm F/2.8 EX DC OS HSM (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=37244"} Sigma 17-50 F/2.8 OS HSM (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=10157"} Tamron 17-50 F/2.8 или Sigma 18-50/2.8? (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=11244"} Sigma 17-70 F/2.8-4.5 (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=29349"} Sigma 17-70 F/2.8-4 OS HSM (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=64898"} Sigma 18-35mm F/1.8 HSM Art
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=25054"} SIGMA 18-50 mm F/2.8-4.5 DC OS HSM (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=22596"} Sony 18-55mm F/3.5-5.6 SAM (SAL-1855)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=7415"} Sony & Minolta 18-70 F/3.5-5.6
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=18019"} SIGMA 18-125/3.5-5.6 DC (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=59355"} Sony DT 18-135 3.5-5.6 SAM
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=63169"} SIGMA AF 18-200 MM f/3.5-6.3 II DC HSM (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=7692"} Tamron 18-200/3.5-6.3  (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=44557"} SIGMA 18-250mm DC OS HSM (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=9275"} Tamron 18-250/3.5-6.3 XR Di II IF-LD (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=19513"} Tokina 19-35/3.5-4.5
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?p=67268"} Tamron SP 20-40/2.7-3.5
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=19944"} Tokina AT-X 20-35 / 2.8 PRO
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/tokina-af-20-35mm-f-3-5-4-5.57698/"} TOKINA AF 20-35mm f/3.5-4.5 AF235 и TOKINA AF 20-35mm f/3.5-4.5 AF235II
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=10562"} Minolta 20-35/3.5-4.5
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=8126"} Minolta 24-50 F/4
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=12970"} Sony 24-70 F/2.8 CZ SSM
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=9943"} Sigma 24-70 F/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=21202"} Sigma 24-70 F/2.8 HSM
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=10448"} Minolta 24-85 F/3.5-4.5
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=10862"} Sony & Minolta 24-105/3.5-4.5
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=8253"} 24-85 vs 28-85 vs 24-105
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=11425"} Sigma 24-135 F/2.8-4.5
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/vse-o-tamron-24-70-2-8.33069/"} Tamron SP 24-70mm F/2.8 Di USD
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=26857&highlight=Tamron"} Tamron SP AF 24-135 F/3.5-5.6 AD Aspherical IF Macro.
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=12207"} Tokina 24-200 F/3.5-5.6 (ATX 242 AF)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=12270"} Minolta 28-70 F/2.8 G
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=11481"} Tokina 28-70 F/2.6-2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=33369"} Tokina 28-70 F/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=23591"} Sigma 28-70 F/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13425"} Tamron 28-75 F/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=24712"} Sony 28-75mm F/2.8 SAM
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=7700"} Minolta  28-75 А/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13200"} Minolta 28-80 F/3.5-5.6
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=72912"} Tokina AF 28-80 F/3.5-4.5
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13147"} Minolta AF 28-85 F/3.5-4.5
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=7730"} Minolta 28-100 F/3.5-5.6
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=7606"} Minolta AF 28-105 мм F/3.5-4.5
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=14096"} Tamron 28-105 F/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=7720"} Minolta 28-135 F/4-4.5
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=15548"} SAKAR 28-200 F/3.5-5.6
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/sigma-24-105mm-f4-dg-os-hsm-art.43026/"} Sigma 24-105 F4 HSM Art
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/tamron-28-300mm-f-3-5-6-3-di-pzd-minolta-a.51485/"} Tamron 28-300
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=7872"} Minolta 35-70 F/4
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=9610"} Minolta 35-70 F/3.5-4.5
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=37494"} Minolta 35-80 F/4-5.6
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=10282"} Minolta 35-105 F/3.5-4.5
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13886"} Tamron SP 35-105 F/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=75924"} Tamron 35-135 F/3.5-4.5
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/sigma-50-150-2-8.1785/"} Sigma 50-150F2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=61023"} Sony DT 55-300 F/4.5-5.6
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=9366"} Sigma 50-500 F/4-6.3 EX APO DG
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=46706"} Sigma 50-200 F/4-5.6 HSM OS
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13274"} Sony 55-200 F/4-5.6
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=22595"} Sony DT 55-200mm F/4-5.6 SAM (SAL55200-2)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=61023"} Sony DT 55-300mm F/4.5-5.6  (APS-C)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=9444"} Sony & Konika-Minolta 70-200 F/2.8 G SSM
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13440"} Tamron 70-200 F/2.8 Di LD [IF] Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=15026"} Sigma 70-200 F/2.8 - 2 варианта
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=14297"} Sigma 70-210 F/2.8 APO
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=9405"} Sigma 70-210 F/2.8 APO и 70-200 F/2.8 APO EX DG
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=8351"} MINOLTA AF 70-210 F/3.5-4.5
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=7851"} Minolta 70-210 F/4 (beercan)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13358"} Sony 70-300 F/4.5-5.6 G
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=16522"} Sony 70-400 F/4-5.6 G
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=10802"} SIGMA AF 70-300mm F/4-5.6 DL MACRO SUPER II
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=40399"} Tamron SP AF 70-300 F/4-5.6 Di VC USD
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=40791"} Tamron AF 70-300 F/4-5.6 Di LD Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=60596"} Sigma AF 75-200mm F/2.8-3.5
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=11543"} Minolta 75-300 F/4.5-5.6 (Big Beercan)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=7796"} Minolta 75-300 F/4.5-5.6 (KIT)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?p=779502"} Sony 75-300 F/4.5-5.6 (KIT)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=13463"} Minolta 80-200 F/2.8 G HS APO
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=22324"} Tokina AT-X828 PRO 80-200 F/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=12871"} Sigma 80-400mm F/4.5-5.6 EX OS APO
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=10471"} Minolta 100-200 F/4.5
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=14018"} Minolta 100-300 F/4.5-5.6 APO
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=10878"} Sigma AF 100-300 F/4 APO EX DG HSM
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=20816"} Minolta 100-400 F/4,5-6,7 TELE APO
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=23403"} Sigma AF 120-400 F/4.5-5.6 DG HSM
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=20825"} Sigma AF 150-500 F/5-6.3 APO DG HSM
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=7890"} Sigma 170-500 F/5-6.3
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=14466"} Tamron 200-500 mm F/5-6.3 Di LD [IF] (для Sony)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=68251"} Tamron 150-600 F/5.6-6.3 USD (для Sony)
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/anons-sony-fe-12-24-4-g.59627/"} Sony FE 12-24/4 G
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=73903"} Sony FE 16-35mm F4 ZA OSS Carl Zeiss Vario Tessar T* (SEL-1635Z)
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/anons-sony-fe-16-35mm-f-2-8-gm.58749/"} Sony FE 16-35mm f/2.8 GM
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=67870"} Sony FE 24-70mm F4 ZA OSS Carl Zeiss Vario Tessar T* (SEL-2470Z)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=80152"} Sony FE 24-70mm F2.8 GM
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=72986"} Sony FE 24-240mm F3.5-6.3 OSS
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=68007"} Sony FE 28-70mm F3.5–5.6 OSS (SEL-2870)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=72942"} Sony FE PZ 28-135mm F4 OSS (SEL-28135)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=67794"} Sony FE 70-200mm F4 G OSS (SEL-70200G)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=80153"} Sony FE 70-200mm f/2.8 GM OSS
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=81027"} Sony FE 70-300mm F4.5–5.6 G OSS
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/obektiv-sony-fe-100-400mm-f4-5-5-6-gm-oss.59376/"}  Sony FE 100-400mm F4.5-5.6 GM OSS
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=81273&page=10"} Zeiss Batis 18mm f/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=76157"} Zeiss Batis 25mm F2
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=72984"} Sony FE 28mm f2.0
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=72985"} Sony FE 35mm F1.4 ZA Carl Zeiss Distagon T* (SEL-35F14Z)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=67866"} Sony FE 35mm F2.8 ZA Carl Zeiss Sonnar T* (SEL-35F28Z)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=81026"} Sony FE 50mm F1.8 Prime Lens (SEL50F18F)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=67867"} Sony FE 55mm F1.8 ZA Carl Zeiss Sonnar T* (SEL-55F18Z)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=82821&page=8"} Sony FE 50mm F2.8 Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=82284"} Sony Zeiss FE 50mm F1.4 ZA
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=76158"} Zeiss Batis 85mm F1.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=80155"} Sony FE 85mm f/1.4 GM
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/anons-obektiv-sony-fe-85-1-8.58051/"} Sony FE 85/1.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=72990"} Sony FE 90mm F2.8 G Macro OSS (SEL-90F28G)
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/anons-sony-fe-100-2-8-g-stf.58627/"} Sony FE 100/2.8 GM STF
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/zeiss-batis-2-8-135.59234/"} Zeiss Batis 135mm F2.8
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/samyang-af-35mm-f2-8-fe.59778/"} Samyang 35F2.8
+          %li
+            %a.externalLink{:href => "https://www.sony-club.ru/threads/anons-samyang-af-50mm-f-1-4-fe-i-af-14mm-f-2-8-fe-cs-avtofokusom.55426/"} Samyang 14/2.8
+          %li
+            %a.externalLink{:href => "https://www.sony-club.ru/threads/anons-samyang-af-50mm-f-1-4-fe-i-af-14mm-f-2-8-fe-cs-avtofokusom.55426/"} Samyang 50/1.4
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=78557"} Zeiss Loxia 2.8/21
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=76795"} Zeiss Loxia 35mm F2 Biogon T*
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=76796"} Zeiss Loxia 50mm F2 Planar T*
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=83001&page=4"} Zeiss Loxia 2.4/85 Sonnar FE
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/voigtlander-heliar-hyper-wide-10mm-f-5-6-aspherical-e-mount-full-frame.55785/"} Voigtlander 10 mm F 5,6 Hyper-Wide-Heliar
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=80600"} Voigtlander 12 mm F 5,6 Ultra-Wide-Heliar
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/voigtlander-super-wide-heliar-15mm-f-4-5-aspherical-e-mount-full-frame.56050/"} Voigtlander 15 mm F 4,5 Super-Wide-Heliar
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=80761"} Laowa ZERO-Distortion 12mm f/2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=76999"} Laowa 15mm f/4 Wide Angle 1:1 Macro Lens
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=80731"} Laowa 60mm f/2.8 2X Ultra-Macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=80715"} Laowa 105mm f/2 STF
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=25221"} Samyang 14mm F2.8 ED AS IF UMC
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/statja-samyang-objavljaet-novyj-20mm-f-1-8.56426/"} Samyang 20mm F1.8 ED AS UMC
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=48131"} Samyang 24mm F1.4 ED AS UMC
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=57191"} Samyang T-S 24mm f/3.5 ED AS UMC
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=35138"} Samyang 35mm f/1.4 ED AS UMC
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=20603"} Samyang 85mm F1.4 AS IF UMC
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=74595&page=11"} Samyang 135mm f/2.0 ED UMS
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=76117"} Mitakon 50 mm f/ 0.95 Speedmaster
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=76140"} Mitakon 85/1.2 Speedmaster
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/tokina-firin-20mm-fe-mf.58912/"} Tokina FiRIN 20mm F2 FE MF
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=81294&page=9"} (Анонс) Зенитар 0.95/50-E
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/anons-nokton-classic-35mm-f1-4-e-mount.58819/"} (Анонс) NOKTON classic 35mm F1.4 E-mount
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/anons-nokton-40mm-f1-2-aspherical.58817/"} (Анонс) NOKTON 40mm F1.2 Aspherical
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/anons-macro-apo-lanthar-65mm-f2-aspherical.58816/"} (Анонс) MACRO APO – LANTHAR 65mm F2 Aspherical
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=62261"} Sony 10-18mm F4 OSS (SEL-1018)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=62123"} Sony PZ 16-50mm F3.5-5.6 OSS (SEL-P1650)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=70590"} Sony 18-50mm f/4-5.6 (SEL-1850)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=35877"} Sony 18-55mm F3.5-5.6 OSS (SEL-1855)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=67095"} Sony 16-70mm F4 ZE OSS Vario-Tessar T* E (SEL-1670Z)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=67094"} Sony PZ 18-105mm F4 G OSS (SEL-P18105G)
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/statja-predstavlen-obektiv-sony-e-pz-18-110mm-f4-g-oss.56764/"} (Анонс) Sony E PZ 18-110mm F4 G OSS
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=35470"} Sony 18-200mm F3.5-6.3 OSS (SEL-18200)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=59358"} Sony 18-200mm F3.5-6.3 OSS LE (SEL-18200LE)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=63150"} Sony PZ 18-200mm F3.5-6.3 OSS (SEL-P18200)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=48780"} Sony 55-210mm F4.5-6.3 OSS (SEL-55210)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=66896"} Zeiss Touit 12mm F2.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=33995"} Sony 16mm F2.8 (SEL-16F28)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=63078"} Sony 20mm F2.8 (SEL-20F28)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=48771"} Sony 24mm F1.8 Zeiss Sonnar T* (SEL-24F18Z)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=44426"} Sony 30mm F3.5 macro (SEL-30M35)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=66895"} Zeiss Touit 32mm F1.8
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=62116"} Sony 35mm F1.8 OSS (SEL-35F18)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=48772"} Sony 50mm F1.8 OSS (SEL-50F18)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=69903"} Zeiss Touit 50mm F2.8 macro
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=53393"} Tamron 18-200 mm f/ 3.5-6.3 Di III VC
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=54684"} Sigma 19mm F2.8 DN (обе версии)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=54685"} Sigma 30mm F2.8 DN (обе версии)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=80528"} Sigma 30mm F/1.4 DC DN
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=63245"} Sigma 60mm F2.8 DN
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=55557"} Samyang 8mm f/2.8 UMC Fish-eye (обе версии)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=70551"} Samyang 12mm f2.0 NCS CS
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=80752"} Samyang 21 mm f/ 1.4 AS UMC CS
+          %li
+            %a.internalLink{:href => "https://sony-club.ru/threads/anons-samyang-35mm-f1-2.56371/"} (Анонс) Samyang 35mm F1.2
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/content.php?r=378-Meike-25mm-f-0-95-28mm-f-2-8-35mm-f-1-7-50mm-f-2-0"} (Анонс) Meike 28/2.8, 35/1.7, 50/2.0, 25/0.95
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=60709"} Mitakon 35mm F0.95 (обе версии)
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=49662"} Noktor HyperPrime 50mm F0.95
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=80751"} Samyang 50 mm f/ 1.2 AS UMC CS
+          %li
+            %a.internalLink{:href => "http://sony-club.ru/showthread.php?t=65645"} Samyang Reflex 300 mm f/ 6.3 ED UMC CS

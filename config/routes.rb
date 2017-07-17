@@ -46,5 +46,7 @@ Rails.application.routes.draw do
 
   resources :lens_models do
     get :select_lens_models, on: :collection
+    get :edit_index, on: :collection
+    post :update_sony_forum_link, on: :member
   end
 end
