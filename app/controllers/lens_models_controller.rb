@@ -18,6 +18,7 @@ class LensModelsController < ApplicationController
   end
 
   def edit_index
+    @lens_models = @lens_models.order('updated_at DESC')
     respond_with(@lens_models)
   end
 
@@ -26,3 +27,4 @@ class LensModelsController < ApplicationController
     lens.update(sony_forum_link: params[:link])
   end
 end
+
