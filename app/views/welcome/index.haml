@@ -2,7 +2,15 @@
   .hidden-xlg
     .row
       .col-md-12.m-b-10
-        %iframe{:allowfullscreen => "", :frameborder => "0", :height => "330", :src => "https://rtsp.me/embed/Nziab9pF/", :width => "440"}
+        %table
+          %tr
+            %td
+              %iframe{:allowfullscreen => "", :frameborder => "0", :height => "330", :src => "https://rtsp.me/embed/Nziab9pF/", :width => "440"}
+            %td{valign: "bottom"}
+              = image_tag "drova1.png", size: "300x300"
+            %td{valign: "bottom"}
+              = image_tag "drova2.jpeg", size: "300x300"
+        = link_to 'Таймлапс', 'http://tl1.ru.rtsp.me/timelapse/sowvhJeB.mp4'
     .row
       .col-md-12.m-b-10
         .widget-item{:style => "zoom: 1;"}

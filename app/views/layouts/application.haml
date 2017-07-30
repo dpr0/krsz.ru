@@ -29,24 +29,25 @@
         / END RESPONSIVE MENU TOGGLER
         .header-quick-nav
           / BEGIN TOP NAVIGATION MENU
-          .pull-left
-            %ul.nav.quick-section
-              %li.quicklinks
-                %a#layout-condensed-toggle{:href => "#"}
-                  .iconset.top-menu-toggle-dark
-            %ul.nav.quick-section
-              %li.quicklinks
-                %a{:href => "#"}
-                  .iconset.top-reload
-              %li.quicklinks
-                %span.h-seperate
-              %li.quicklinks
-                %a{:href => "#"}
-                  .iconset.top-tiles
-              %li.m-r-10.input-prepend.inside.search-form.no-boarder
-                %span.add-on
-                  %span.iconset.top-search
-                %input.no-boarder{:name => "", :placeholder => "Search Dashboard", :style => "width:250px;", :type => "text"}/
+          - if current_user
+            .pull-left
+              %ul.nav.quick-section
+                %li.quicklinks
+                  %a#layout-condensed-toggle{:href => "#"}
+                    .iconset.top-menu-toggle-dark
+              %ul.nav.quick-section
+                %li.quicklinks
+                  %a{:href => "#"}
+                    .iconset.top-reload
+                %li.quicklinks
+                  %span.h-seperate
+                %li.quicklinks
+                  %a{:href => "#"}
+                    .iconset.top-tiles
+                %li.m-r-10.input-prepend.inside.search-form.no-boarder
+                  %span.add-on
+                    %span.iconset.top-search
+                  %input.no-boarder{:name => "", :placeholder => "Search Dashboard", :style => "width:250px;", :type => "text"}/
           / END TOP NAVIGATION MENU
           / BEGIN CHAT TOGGLER
           .pull-right
