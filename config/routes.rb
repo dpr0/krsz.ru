@@ -25,6 +25,8 @@ Rails.application.routes.draw do
 
   root to: 'welcome#index'
   get 'welcome/index'
+  get 'stroymat/index'
+  get 'kitchen/index'
   resources :users
 
   resources :camera_items do
@@ -49,4 +51,13 @@ Rails.application.routes.draw do
     get :edit_index, on: :collection
     post :update_sony_forum_link, on: :member
   end
+
+  resources :questions, shallow: true do
+    resources :attaches
+    resources :answers, shallow: true do
+      resources :attaches
+    end
+  end
+
+  mount ActionCable.server => '/cable'
 end
