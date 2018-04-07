@@ -1,0 +1,10 @@
+%h1 Список домов
+
+%table
+  %tbody
+    - @houses.each do |house|
+      %tr
+        %td= link_to house.name, house
+        %td
+          Тем:
+          = house.questions.count

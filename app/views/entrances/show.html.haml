@@ -1,0 +1,32 @@
+%p#notice= notice
+
+.row-fluid
+  .span12
+    .grid.simple
+      .grid-title
+        %h4
+          = link_to "К списку подъездов дома #{@entrance.house.name}", house_entrances_path
+          Подъезд:
+          %span.semi-bold= @entrance.number
+        .tools
+          %a.collapse{:href => 'javascript:;'}
+          %a.remove{:href => 'javascript:;'}
+      .grid-body
+        #example_wrapper.dataTables_wrapper.form-inline{:role => 'grid'}
+          %table#example.table.table-hover.table-condensed.dataTable{'aria-describedby' => 'example_info'}
+            %thead
+              %tr{:role => 'row'}
+                %th.sorting_asc{'aria-controls' => 'example', 'aria-label' => 'Project Name: activate to sort column descending', 'aria-sort' => 'ascending', :colspan => '1', :role => 'columnheader', :rowspan => '1', :style => 'width:10%', :tabindex => '0'} Project Name
+                %th.sorting{'aria-controls' => 'example', 'aria-label' => 'Description: activate to sort column ascending', :colspan => '1', 'data-hide' => 'phone,tablet', :role => 'columnheader', :rowspan => '1', :style => 'width:22%', :tabindex => '0'} Description
+                %th.sorting{'aria-controls' => 'example', 'aria-label' => 'Progress: activate to sort column ascending', :colspan => '1', 'data-hide' => 'phone,tablet', :role => 'columnheader', :rowspan => '1', :style => 'width:10%', :tabindex => '0'} Progress
+            %tbody{'aria-live' => 'polite', 'aria-relevant' => 'all', :role => 'alert'}
+              - @entrance.questions.each do |question|
+                %tr
+                  %td
+                    %span.label.label-important !!!
+                    %span.muted= link_to question.title, house_entrance_question_path(question, entrance_id: @entrance.id)
+                  %td
+                    %span.muted= link_to question.body, house_entrance_question_path(question, entrance_id: @entrance.id)
+                  %td
+                    .progress
+                      .progress-bar.progress-bar-danger.animate-progress-bar{'data-percentage' => '70%', :style => 'width: 70%;'}

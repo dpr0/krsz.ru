@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
 
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :load_lens_and_cameras
+  before_action :cors_set_access_control_headers
   protect_from_forgery with: :exception
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_in) do |user_params|
@@ -20,12 +21,20 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def cors_set_access_control_headers
+    headers['Access-Control-Allow-Origin']   = '*'
+    headers['Access-Control-Allow-Methods']  = 'POST, PUT, DELETE, GET, OPTIONS'
+    headers['Access-Control-Request-Method'] = '*'
+    headers['Access-Control-Allow-Headers']  = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+  end
+
   def load_lens_and_cameras
     @camera_models = CameraModel.all
     @camera_models_items_count = @camera_models.joins(:camera_items).group(:id).count
     @lens_models = LensModel.all
     @lens_models_brand_count = @lens_models.group(:brand).count
     @lens_models_items_count = @lens_models.joins(:lens_items).group(:id).count
+    @houses = House.all
   end
 
   def self.render_with_serializer(user, *args)

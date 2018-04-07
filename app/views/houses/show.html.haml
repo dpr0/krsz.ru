@@ -1,0 +1,17 @@
+%p#notice= notice
+
+%h1= @house.name
+
+%table
+  %tbody
+    - @house.entrances.each do |entrance|
+      %tr
+        %td= link_to "Подъезд #{entrance.number}", house_entrance_path(entrance.house, id: entrance)
+
+= link_to 'К списку домов', houses_path
+
+%table
+  %tbody
+    - @house.questions.each do |question|
+      %tr
+        %td= link_to question.title, house_question_path(question, house_id: @house.id)

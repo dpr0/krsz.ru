@@ -1,0 +1,116 @@
+%p#notice= notice
+
+%h1
+  = @house.name
+%h2
+  подъезд:
+  = @entrance.number
+
+%b= @question.title
+%p= @question.body
+
+.row-fluid
+  .span12
+    .grid.simple
+      .grid-title
+        %h4
+          Table
+          %span.semi-bold Styles
+        .tools
+          %a.collapse{:href => "javascript:;"}
+          %a.config{"data-toggle" => "modal", :href => "#grid-config"}
+          %a.reload{:href => "javascript:;"}
+          %a.remove{:href => "javascript:;"}
+      .grid-body
+        #example_wrapper.dataTables_wrapper.form-inline{:role => "grid"}
+          .row
+            .col-md-6
+              #example_length.dataTables_length
+                %label
+                  #s2id_autogen3.select2-container.span12
+                    %input#s2id_autogen4.select2-focusser.select2-offscreen{:type => "text"}/
+                    .select2-drop.select2-display-none
+                      .select2-search.select2-search-hidden.select2-offscreen
+                        %input.select2-input{:autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :spellcheck => "false", :type => "text"}/
+                      %ul.select2-results
+                  %select.select2-wrapper.span12.select2-offscreen{"aria-controls" => "example", :name => "example_length", :size => "1", :tabindex => "-1"}
+                    %option{:selected => "selected", :value => "10"} 10
+                    %option{:value => "25"} 25
+                    %option{:value => "50"} 50
+                    %option{:value => "100"} 100
+              .DTTT
+                %a#ToolTables_example_0.btn.btn-white.DTTT_button_collection
+                  %span
+                    %i.fa.fa-cloud-download
+            .col-md-6
+              #example_filter.dataTables_filter
+                %label
+                  Search:
+                  %input.input-medium{"aria-controls" => "example", :type => "text"}/
+          %table#example.table.table-hover.table-condensed.dataTable{"aria-describedby" => "example_info"}
+            %thead
+              %tr{:role => "row"}
+                %th.sorting_disabled{"aria-label" => "\r\n\r\n\r\n", :colspan => "1", :role => "columnheader", :rowspan => "1", :style => "width:1%"}
+                  .checkbox.check-default{:style => "margin-right:auto;margin-left:auto;"}
+                    %input#checkbox1{:type => "checkbox", :value => "1"}/
+                    %label{:for => "checkbox1"}
+                %th.sorting_asc{"aria-controls" => "example", "aria-label" => "Project Name: activate to sort column descending", "aria-sort" => "ascending", :colspan => "1", :role => "columnheader", :rowspan => "1", :style => "width:10%", :tabindex => "0"} Project Name
+                %th.sorting{"aria-controls" => "example", "aria-label" => "Description: activate to sort column ascending", :colspan => "1", "data-hide" => "phone,tablet", :role => "columnheader", :rowspan => "1", :style => "width:22%", :tabindex => "0"} Description
+                %th.sorting{"aria-controls" => "example", "aria-label" => "Price: activate to sort column ascending", :colspan => "1", :role => "columnheader", :rowspan => "1", :style => "width:6%", :tabindex => "0"} Price
+                %th.sorting{"aria-controls" => "example", "aria-label" => "Progress: activate to sort column ascending", :colspan => "1", "data-hide" => "phone,tablet", :role => "columnheader", :rowspan => "1", :style => "width:10%", :tabindex => "0"} Progress
+            %tbody{"aria-live" => "polite", "aria-relevant" => "all", :role => "alert"}
+              - 
+              %tr.odd
+                %td
+                  .checkbox.check-default
+                    %input#checkbox3{:type => "checkbox", :value => "3"}/
+                    %label{:for => "checkbox3"}
+                %td.sorting_1
+                  Angry Birds   
+                  %span.label.label-important ALERT!
+                %td
+                  %span.muted Something goes here
+                %td
+                  %span.muted $9,000
+                %td
+                  .progress
+                    .progress-bar.progress-bar-danger.animate-progress-bar{"data-percentage" => "70%", :style => "width: 70%;"}
+              -#%tr.even
+              -#  %td.v-align-middle
+              -#    .checkbox.check-default
+              -#      %input#checkbox2{:type => "checkbox", :value => "3"}/
+              -#      %label{:for => "checkbox2"}
+              -#  %td.v-align-middle.sorting_1 Early Bird
+              -#  %td.v-align-middle
+              -#    %span.muted Redesign project template
+              -#  %td
+              -#    %span.muted $4,500
+              -#  %td.v-align-middle
+              -#    .progress
+              -#      .progress-bar.progress-bar-success.animate-progress-bar{"data-percentage" => "80%", :style => "width: 80%;"}
+              -#%tr.odd
+              -#  %td
+              -#    .checkbox.check-default
+              -#      %input#checkbox4{:type => "checkbox", :value => "3"}/
+              -#      %label{:for => "checkbox4"}
+              -#  %td.sorting_1 PHP Login page
+              -#  %td.v-align-middle
+              -#    %span.muted A project in business and science is typically defined
+              -#  %td
+              -#    %span.muted $5,400
+              -#  %td
+              -#    .progress.progress-info
+              -#      .progress-bar.progress-bar-primary.animate-progress-bar{"data-percentage" => "60%", :style => "width: 60%;"}
+              -#%tr.even
+              -#  %td
+              -#    .checkbox.check-default
+              -#      %input#checkbox5{:type => "checkbox", :value => "3"}/
+              -#      %label{:for => "checkbox5"}
+              -#  %td.sorting_1 Zombies
+              -#  %td.v-align-middle
+              -#    %span.muted frequently involving research or design
+              -#  %td
+              -#    %span.muted $6,000
+              -#  %td
+              -#    .progress
+              -#      .progress-bar.progress-bar-warning.animate-progress-bar{"data-percentage" => "60%", :style => "width: 60%;"}

@@ -1,18 +1,30 @@
+- @houses.each do |house|
+  %li
+    %a{href: 'javascript:;'}
+      %i.fa.fa-folder-open
+      %span.title= house.name
+      %span.badge.badge-disable.pull-right= house.questions.size
+    %ul.sub-menu
+      - house.entrances.each do |entrance|
+        %li
+          = link_to house_entrance_path(house.id, entrance.id) do
+            %span.title= "Подъезд #{entrance.number}"
+            %span.badge.badge-disable.pull-right= entrance.questions.size
 - if current_user
   %li.start.active
-    %a{:href => users_path}
+    %a{href: users_path}
       %i.icon-custom-ui
       %span.title Пользователи
   %li
-    %a{:href => new_lens_item_path}
+    %a{href: new_lens_item_path}
       %i.icon-custom-ui
       %span.title Продать объектив
   %li
-    %a{:href => new_camera_item_path}
+    %a{href: new_camera_item_path}
       %i.icon-custom-ui
       %span.title Продать фотоаппарат
   %li
-    %a{:href => "javascript:;"}
+    %a{href: 'javascript:;'}
       %i.fa.fa-folder-open
       %span.title Камеры
       %span.badge.badge-disable.pull-right= @camera_models.size
@@ -26,7 +38,7 @@
           %span.title E-mount
           %span.badge.badge-disable.pull-right= @camera_models.e_mount_cam.size
   %li
-    %a{:href => "javascript:;"}
+    %a{href: 'javascript:;'}
       %i.fa.fa-folder-open
       %span.title Объективы
       %span.badge.badge-disable.pull-right= @lens_models.size
@@ -44,3 +56,4 @@
           = link_to select_lens_models_lens_models_path(brand: key) do
             %span.title= key
             %span.badge.badge-disable.pull-right= value
+              

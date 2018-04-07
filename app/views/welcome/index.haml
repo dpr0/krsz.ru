@@ -1,24 +1,22 @@
 .row
   .hidden-xlg
     .row
-      .col-md-12.m-b-10
+      .col-md-6.m-b-10
         %table
           %tr
             %td
               %iframe{:allowfullscreen => "", :frameborder => "0", :height => "330", :src => "https://rtsp.me/embed/Nziab9pF/", :width => "440"}
-            %td{valign: "bottom"}
-              = image_tag "drova1.png", size: "300x300"
-            %td{valign: "bottom"}
-              = image_tag "drova2.png", size: "300x300"
-        Ускоренная съемка за последние сутки: 
-        = link_to '1', 'http://tl1.ru.rtsp.me/timelapse/sowvhJeB.mp4'
-        = link_to '2', 'http://tl1.ru.rtsp.me/timelapse/VteP256h.mp4'
-        = link_to '3', 'http://tl1.ru.rtsp.me/timelapse/NwYjsHoc.mp4'
-        = link_to '4', 'http://tl1.ru.rtsp.me/timelapse/IDHyzGVC.mp4'
-        = link_to '5', 'http://tl1.ru.rtsp.me/timelapse/62qSDvzI.mp4'
-        = link_to '6', 'http://tl1.ru.rtsp.me/timelapse/Nziab9pF.mp4'
-    .row
-      .col-md-12.m-b-10
+            -#%td{valign: "bottom"}
+            -#  = image_tag "drova1.png", size: "300x300"
+            -#%td{valign: "bottom"}
+            -#  = image_tag "drova2.png", size: "300x300"
+        -#= link_to '1', 'http://tl1.ru.rtsp.me/timelapse/sowvhJeB.mp4'
+        -#= link_to '2', 'http://tl1.ru.rtsp.me/timelapse/VteP256h.mp4'
+        = link_to 'Таймлапс 3', 'http://tl1.ru.rtsp.me/timelapse/NwYjsHoc.mp4'
+        -#= link_to '4', 'http://tl1.ru.rtsp.me/timelapse/IDHyzGVC.mp4'
+        -#= link_to '5', 'http://tl1.ru.rtsp.me/timelapse/62qSDvzI.mp4'
+        = link_to 'Таймлапс 6', 'http://tl1.ru.rtsp.me/timelapse/Nziab9pF.mp4'
+      .col-md-6.m-b-10
         .widget-item{:style => "zoom: 1;"}
           .controller.overlay.right
             %a.reload{:href => "javascript:;"}
@@ -52,7 +50,11 @@
                 .col-md-7.no-padding
                   .clearfix
                   .m-r-20.m-t-20.m-b-10.m-l-10
-                    %p.p-b-10 Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня
+                    %p.p-b-10
+                      - if @sensor['crc']
+                        %ul
+                          %li= "Температура: #{@sensor['temp']}"
+                          %li= "CO2: #{@sensor['co2']}"
                     %a.hashtags.m-b-5{:href => "#"} #tag1
                     %a.hashtags.m-b-5{:href => "#"} #tag2
                     %a.hashtags.m-b-5{:href => "#"} #tag3

@@ -13,6 +13,7 @@
 //= require pace/pace.min
 //= require jquery
 //= require jquery_ujs
+//= require action_cable
 //= require bootstrapv3/js/bootstrap.min
 //= require jquery-block-ui/jqueryblockui.min
 //= require jquery-unveil/jquery.unveil.min
@@ -23,3 +24,6 @@
 //= require js/webarch
 //= require turbolinks
 //= require_tree .
+
+var App = App || {};
+App.cable = ActionCable.createConsumer();

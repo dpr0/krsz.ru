@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.8.1'
+lock '3.10.1'
 
 set :application, 'krsz'
 set :repo_url, 'git@gitlab.com:dvitvitskiypro/krsz.ru.git'

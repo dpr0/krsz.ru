@@ -4,6 +4,7 @@
     %title KRSZ.RU
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = csrf_meta_tags
+    -#= action_cable_meta_tag
   %body
     / BEGIN HEADER
     .header.navbar.navbar-inverse
@@ -141,8 +142,8 @@
         .content
           - flash.each do |name, msg|
             - if msg.is_a?(String)
-              %div.alert(class ="#{name.to_s == 'notice' ? 'alert-success' : 'alert-danger'}")
-                %button.close{'type'=>"button", 'data-dismiss'=>"alert", 'aria-hidden'=>"true"}
+              %div.alert{ class: name.to_s == 'notice' ? 'alert-success' : 'alert-danger' }
+                %button.close{ type: 'button', 'data-dismiss' => 'alert', 'aria-hidden' => true }
                 = content_tag :div, msg, :id => "flash_#{name}"
           = yield
       / BEGIN CHAT

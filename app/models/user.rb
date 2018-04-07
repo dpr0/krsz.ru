@@ -10,4 +10,6 @@ class User < ApplicationRecord
 
   has_many :camera_items
   has_many :lens_items
+  has_many :questions, dependent: :destroy
+  has_many :answers, dependent: :destroy
 end

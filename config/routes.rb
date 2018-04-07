@@ -1,11 +1,30 @@
 # frozen_string_literal: true
 Rails.application.routes.draw do
+  resources :houses, only: [:index, :show] do
+    resources :entrances, only: [:index, :show] do
+      resources :questions do
+        resources :attaches
+        resources :answers do
+          resources :attaches
+        end
+      end
+    end
+    resources :questions do
+      resources :attaches
+      resources :answers do
+        resources :attaches
+      end
+    end
+  end
   use_doorkeeper
   devise_for :admins
   devise_for :users
 
   namespace :api do
     namespace :v1 do
+      resource :home do
+        post :co2_data,     on: :collection
+      end
       resource :profiles do
         get :me,            on: :collection
         get :users,         on: :collection
@@ -14,10 +33,10 @@ Rails.application.routes.draw do
         get :camera_items,  on: :collection
         get :camera_models, on: :collection
       end
-      resources :lens_models do
+      resources :lens_models, only: [:index, :show] do
         resources :lens_items
       end
-      resources :camera_models do
+      resources :camera_models, only: [:index, :show] do
         resources :camera_items
       end
     end
@@ -27,7 +46,9 @@ Rails.application.routes.draw do
   get 'welcome/index'
   get 'stroymat/index'
   get 'kitchen/index'
-  resources :users
+  get 'chess/index'
+  get 'home/index'
+  resources :users, only: [:index, :show, :edit, :update]
 
   resources :camera_items do
     member do
@@ -42,11 +63,11 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :camera_models do
+  resources :camera_models, only: [:index, :show] do
     get :select_camera_models, on: :collection
   end
 
-  resources :lens_models do
+  resources :lens_models, only: [:index, :show] do
     get :select_lens_models, on: :collection
     get :edit_index, on: :collection
     post :update_sony_forum_link, on: :member
