@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby '2.4.0'
+ruby '2.4.1'
 gem 'pg', '~> 0.21'
 gem 'delayed_job_active_record'
 gem 'dotenv-rails'
