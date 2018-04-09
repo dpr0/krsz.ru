@@ -43,10 +43,11 @@
                   .clearfix
                   .m-r-20.m-t-20.m-b-10.m-l-10
                     %p.p-b-10
-                      - if @sensor && @sensor['crc']
+                      - if @sensor
                         %ul
-                          %li= "Температура: #{@sensor['temp']}"
-                          %li= "CO2: #{@sensor['co2']}"
+                          %li= "Дата: #{@sensor.created_at}"
+                          %li= "Температура: #{@sensor.temp}"
+                          %li= "CO2: #{@sensor.co2}"
                     %a.hashtags.m-b-5{:href => "#"} #tag1
                     %a.hashtags.m-b-5{:href => "#"} #tag2
                     %a.hashtags.m-b-5{:href => "#"} #tag3
@@ -85,7 +86,9 @@
                 .col-md-7.no-padding
                   .clearfix
                   .m-r-20.m-t-20.m-b-10.m-l-10
-                    %p.p-b-10 Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня - Новость дня
+                    %p.p-b-10
+                      = line_chart @sensors.pluck(:created_at, :co2)
+                      = line_chart @sensors.pluck(:created_at, :temp)
                     %a.hashtags.m-b-5{:href => "#"} #tag1
                     %a.hashtags.m-b-5{:href => "#"} #tag2
                     %a.hashtags.m-b-5{:href => "#"} #tag3
