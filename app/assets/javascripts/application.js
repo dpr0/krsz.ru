@@ -15,6 +15,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require action_cable
+//= require bootstrap-sprockets
 //= require bootstrapv3/js/bootstrap.min
 //= require jquery-block-ui/jqueryblockui.min
 //= require jquery-unveil/jquery.unveil.min
