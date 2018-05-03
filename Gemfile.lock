@@ -74,10 +74,9 @@ GEM
     bcrypt (3.1.11)
     bindata (1.8.3)
     bindex (0.5.0)
-    bootstrap (4.0.0)
-      autoprefixer-rails (>= 6.0.3)
-      popper_js (>= 1.12.9, < 2)
-      sass (>= 3.5.2)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.3)
     bullet (5.7.5)
       activesupport (>= 3.0.0)
@@ -126,7 +125,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    commonjs (0.2.7)
     concurrent-ruby (1.0.5)
     configurations (2.2.2)
     connection_pool (2.2.1)
@@ -145,7 +143,6 @@ GEM
       railties (>= 4.1.0, < 6.0)
       responders
       warden (~> 1.2.3)
-    devise-bootstrap-views (0.0.11)
     diff-lcs (1.3)
     domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
@@ -250,15 +247,6 @@ GEM
     kgio (2.11.2)
     launchy (2.4.3)
       addressable (~> 2.3)
-    less (2.6.0)
-      commonjs (~> 0.2.7)
-    less-rails (2.8.0)
-      actionpack (>= 4.0)
-      less (~> 2.6.0)
-      sprockets (> 2, < 4)
-      tilt
-    less-rails-bootstrap (3.3.5.0)
-      less-rails (>= 2.6, <= 2.8)
     libv8 (3.16.14.19)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -350,7 +338,6 @@ GEM
       ast (~> 2.4.0)
     parslet (1.8.2)
     pg (0.21.0)
-    popper_js (1.12.9)
     powerpack (0.1.1)
     progress (3.4.0)
     public_suffix (3.0.2)
@@ -510,9 +497,6 @@ GEM
       faraday (~> 0.9)
       jwt (>= 1.5, < 3.0)
       multi_json (~> 1.10)
-    simple_form (3.5.1)
-      actionpack (> 4, < 5.2)
-      activemodel (> 4, < 5.2)
     sinatra (2.0.1)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -592,7 +576,7 @@ DEPENDENCIES
   active_record_doctor
   anycable-rails
   autoprefixer-rails
-  bootstrap
+  bootstrap-sass
   bullet
   bundler-audit
   byebug
@@ -611,7 +595,6 @@ DEPENDENCIES
   database_cleaner
   delayed_job_active_record
   devise
-  devise-bootstrap-views
   doorkeeper
   dotenv-rails
   exif
@@ -626,7 +609,6 @@ DEPENDENCIES
   jquery-rails
   json_spec
   launchy
-  less-rails-bootstrap
   listen
   mailcatcher
   meta_request
@@ -659,8 +641,8 @@ DEPENDENCIES
   rspec-rails
   rtsp
   rubocop
+  sass-rails
   sidekiq
-  simple_form
   spring
   spring-commands-rspec
   sprockets-rails
@@ -673,9 +655,6 @@ DEPENDENCIES
   unicorn
   web-console
   whenever
-
-RUBY VERSION
-   ruby 2.4.0p0
 
 BUNDLED WITH
    1.16.1
