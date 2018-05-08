@@ -33,7 +33,4 @@
 %p
   - (1..10).each do |x|
     = image_tag("http://www.dyxum.com#{@camera_model.dyxum_img_link[0..-8] + x.to_s + '.jpg'}")
-
-= link_to 'Edit', edit_camera_model_path(@camera_model)
-\|
 = link_to 'Back', camera_models_path
