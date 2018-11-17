@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180408072326) do
+ActiveRecord::Schema.define(version: 2018_04_08_072326) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20180408072326) do
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
   end
 
-  create_table "answers", id: :serial, force: :cascade do |t|
+  create_table "answers", force: :cascade do |t|
     t.text "body"
     t.integer "question_id"
     t.integer "user_id"
@@ -184,21 +184,22 @@ ActiveRecord::Schema.define(version: 20180408072326) do
     t.string "sony_forum_link"
   end
 
-  create_table "oauth_access_grants", id: :serial, force: :cascade do |t|
+  create_table "oauth_access_grants", force: :cascade do |t|
     t.integer "resource_owner_id", null: false
-    t.integer "application_id", null: false
+    t.bigint "application_id", null: false
     t.string "token", null: false
     t.integer "expires_in", null: false
     t.text "redirect_uri", null: false
     t.datetime "created_at", null: false
     t.datetime "revoked_at"
     t.string "scopes"
+    t.index ["application_id"], name: "index_oauth_access_grants_on_application_id"
     t.index ["token"], name: "index_oauth_access_grants_on_token", unique: true
   end
 
-  create_table "oauth_access_tokens", id: :serial, force: :cascade do |t|
+  create_table "oauth_access_tokens", force: :cascade do |t|
     t.integer "resource_owner_id"
-    t.integer "application_id"
+    t.bigint "application_id"
     t.string "token", null: false
     t.string "refresh_token"
     t.integer "expires_in"
@@ -206,12 +207,13 @@ ActiveRecord::Schema.define(version: 20180408072326) do
     t.datetime "created_at", null: false
     t.string "scopes"
     t.string "previous_refresh_token", default: "", null: false
+    t.index ["application_id"], name: "index_oauth_access_tokens_on_application_id"
     t.index ["refresh_token"], name: "index_oauth_access_tokens_on_refresh_token", unique: true
     t.index ["resource_owner_id"], name: "index_oauth_access_tokens_on_resource_owner_id"
     t.index ["token"], name: "index_oauth_access_tokens_on_token", unique: true
   end
 
-  create_table "oauth_applications", id: :serial, force: :cascade do |t|
+  create_table "oauth_applications", force: :cascade do |t|
     t.string "name", null: false
     t.string "uid", null: false
     t.string "secret", null: false
@@ -222,7 +224,7 @@ ActiveRecord::Schema.define(version: 20180408072326) do
     t.index ["uid"], name: "index_oauth_applications_on_uid", unique: true
   end
 
-  create_table "questions", id: :serial, force: :cascade do |t|
+  create_table "questions", force: :cascade do |t|
     t.text "body"
     t.string "title", null: false
     t.integer "user_id"

@@ -11,6 +11,7 @@ require 'capistrano/sidekiq'
 # require 'thinking_sphinx/capistrano'
 require 'capistrano3/unicorn'
 require 'capistrano/scm/git'
+require 'capistrano/local_precompile'
 install_plugin Capistrano::SCM::Git
 
 

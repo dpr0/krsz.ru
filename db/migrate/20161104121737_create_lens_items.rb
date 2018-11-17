@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateLensItems < ActiveRecord::Migration[5.0]
+class CreateLensItems < ActiveRecord::Migration[5.1]
   def change
     create_table :lens_items do |t|
       t.references :lens_model, foreign_key: true

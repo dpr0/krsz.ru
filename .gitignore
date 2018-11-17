@@ -17,7 +17,6 @@
 /tmp
 
 vendor/assets/webarch_core/
-/.idea
 !.keep
 *.DS_Store
 *.swo
@@ -34,7 +33,6 @@ vendor/assets/webarch_core/
 /tags
 /tmp/*
 /vendor/bundle
-/.idea/
 /vendor/cache/
 /.env.production
 dump.rdp
@@ -42,3 +40,6 @@ log/
 tmp/
 .byebug_history
 /.byebug_history
+.idea/
+/.idea
+/.idea/

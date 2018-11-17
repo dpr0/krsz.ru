@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="sony_development@localhost" uuid="e51d24ba-2564-4af5-850a-22c54afa75ad">
-      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)" family="POSTGRES" exact-version="9.6.2">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
@@ -10,24 +10,24 @@
       <introspection-schemas>sony_development:@</introspection-schemas>
     </data-source>
     <data-source name="Rails webarch-rails-sample: development" uuid="af619849-fa20-418b-b9d2-47654f137cfb">
-      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)" family="POSTGRES" exact-version="9.6.2">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <introspection-schemas>sony_development:public</introspection-schemas>
     </data-source>
     <data-source name="Rails webarch-rails-sample: test" uuid="3fc54d18-3fee-48e1-9d28-cd48df4c194b">
-      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)" family="POSTGRES" exact-version="9.6.2">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <introspection-schemas>sony_test:public</introspection-schemas>
     </data-source>
     <data-source name="Rails webarch-rails-sample: staging" uuid="30dc30cf-09b5-4de5-9d06-6b93c51789d6">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="POSTGRES" exact-version="0.0" />
     </data-source>
     <data-source name="Rails webarch-rails-sample: production" uuid="e01a1dfb-523e-488e-b0f4-42b7a6f8bbd0">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="POSTGRES" exact-version="0.0" />
     </data-source>
   </component>
 </project>

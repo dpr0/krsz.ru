@@ -1,4 +1,4 @@
-class AddFieldsToCameraModel < ActiveRecord::Migration[5.0]
+class AddFieldsToCameraModel < ActiveRecord::Migration[5.1]
   def change
     add_column :camera_models, :full_name,        :string
     add_column :camera_models, :dyxum_link,       :string

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateCameraModels < ActiveRecord::Migration[5.0]
+class CreateCameraModels < ActiveRecord::Migration[5.1]
   def change
     create_table :camera_models do |t|
       t.string :brand

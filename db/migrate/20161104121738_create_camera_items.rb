@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateCameraItems < ActiveRecord::Migration[5.0]
+class CreateCameraItems < ActiveRecord::Migration[5.1]
   def change
     create_table :camera_items do |t|
       t.references :camera_model, foreign_key: true

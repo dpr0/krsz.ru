@@ -1,8 +1,8 @@
 # config valid only for current version of Capistrano
-lock '3.10.2'
+lock '3.11.0'
 
 set :application, 'krsz'
-set :repo_url, 'git@gitlab.com:dvitvitskiypro/krsz.ru.git'
+set :repo_url, 'git@github.com:dpr0/krsz.ru.git'
 set :deploy_to, '/home/deploy/krsz'
 set :deploy_user, 'deploy'
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/private_pub.yml', 'config/private_pub_thin.yml', '.env') #, 'config/secrets.yml'

@@ -1,22 +1,23 @@
-= simple_form_for(@lens_item, html: { class: "form-horizontal"}) do |f|
+= form_for(@lens_item, html: { class: "form-horizontal"}) do |f|
   .row
     .col-sm-6
-      = f.association :lens_model, prompt: "Выберите объектив", label_method: lambda { |lens| "#{lens.brand} #{lens.name}" }, value_method: :id, include_blank: false
+      = f.collection_select :lens_model, LensModel.all, :id, :name, include_blank: false, prompt: "Выберите объектив"
+      -#= f.association :lens_model, label_method: lambda { |lens| "#{lens.brand} #{lens.name}" }, value_method: :id
   .row
     .col-sm-2
-      = f.input :price, label: false, placeholder: 'Введите цену'
+      = f.text_field :price, label: false, placeholder: 'Введите цену'
     .col-sm-1
-      = f.input :used, label: 'Б/у'
+      = f.text_field :used, label: 'Б/у'
     .col-sm-1
-      = f.input :visible, label: 'Видимый'
+      = f.text_field :visible, label: 'Видимый'
     .col-sm-2.btn.btn-primary
       = f.file_field :image
   .row
     .col-sm-6
-      = f.input :description, label: false
+      = f.text_field :description, label: false
   .row
     .col-sm-6
-      = f.input :used,
+      = f.text_field :used,
               collection: [[true, 'Б/у'], [false, 'Новый']],
               label_method: :last,
               value_method: :first,

@@ -1,4 +1,4 @@
-class AddFieldsToLensModel < ActiveRecord::Migration[5.0]
+class AddFieldsToLensModel < ActiveRecord::Migration[5.1]
   def change
     remove_column :lens_models, :weather, :boolean
     add_column :lens_models, :weather,                :string

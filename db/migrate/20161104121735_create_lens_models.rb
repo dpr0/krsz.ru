@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateLensModels < ActiveRecord::Migration[5.0]
+class CreateLensModels < ActiveRecord::Migration[5.1]
   def change
     create_table :lens_models do |t|
       t.string :brand
