@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AttachesController < ApplicationController
   before_action :authenticate_user!
   def destroy

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Doorkeeper.configure do
   # Change the ORM that doorkeeper will use (needs plugins)
   orm :active_record
@@ -14,7 +16,7 @@ Doorkeeper.configure do
   #   Admin.find_by_id(session[:admin_id]) || redirect_to(new_admin_session_url)
   # end
   admin_authenticator do
-    #Admin.find_by_id(session[:admin_id]) || redirect_to(new_admin_session_url)
+    # Admin.find_by_id(session[:admin_id]) || redirect_to(new_admin_session_url)
     current_user.try(:admin?) || redirect_to(new_user_session_path)
   end
 

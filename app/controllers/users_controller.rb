@@ -11,6 +11,7 @@ class UsersController < ApplicationController
 
   def show
     return unless current_user.admin?
+
     redirect_to :back, alert: 'Access denied.' unless @user == current_user
   end
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Api::V1::LensModelsController < Api::V1::BaseController
   def index
     # respond_with(@lens_models = LensModel.joins(:lens_items))

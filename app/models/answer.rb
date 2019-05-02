@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Answer < ApplicationRecord
   has_many :attaches, as: :attachable, dependent: :destroy
   accepts_nested_attributes_for :attaches, reject_if: :all_blank, allow_destroy: true

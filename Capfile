@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Load DSL and set up stages
 require 'capistrano/setup'
 
@@ -13,7 +15,6 @@ require 'capistrano3/unicorn'
 require 'capistrano/scm/git'
 require 'capistrano/local_precompile'
 install_plugin Capistrano::SCM::Git
-
 
 # Include tasks from other gems included in your Gemfile
 #

@@ -1,4 +1,3 @@
-# encoding: utf-8
 # frozen_string_literal: true
 
 class ImageUploader < CarrierWave::Uploader::Base
@@ -41,6 +40,7 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   def crop!
     return unless model.image_crop_data
+
     manipulate! do |img|
       img.crop!(
         model.image_crop_data[:x],

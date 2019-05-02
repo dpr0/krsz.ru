@@ -1,5 +1,6 @@
-class Question < ApplicationRecord
+# frozen_string_literal: true
 
+class Question < ApplicationRecord
   has_many :answers, dependent: :destroy
   has_many :subscriptions, dependent: :destroy
   has_many :attaches, as: :attachable, dependent: :destroy

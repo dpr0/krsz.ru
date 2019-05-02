@@ -1,94 +1,91 @@
 .row
-  .hidden-xlg
-    .row
-      .col-md-6.m-b-10
-        %table
-          %tr
-            %td
-              %iframe{:allowfullscreen => "", :frameborder => "0", :height => "330", :src => "https://rtsp.me/embed/Nziab9pF/", :width => "440"}
-        = link_to 'Таймлапс 3', 'http://tl1.ru.rtsp.me/timelapse/NwYjsHoc.mp4'
-        = link_to 'Таймлапс 6', 'http://tl1.ru.rtsp.me/timelapse/Nziab9pF.mp4'
-      .col-md-6.m-b-10
-        .widget-item{:style => "zoom: 1;"}
-          .controller.overlay.right
-            %a.reload{:href => "javascript:;"}
-            %a.remove{:href => "javascript:;"}
-          .tiles.green.overflow-hidden.full-height{:style => "max-height:214px"}
-            .overlayer.bottom-right.fullwidth
-              .overlayer-wrapper
-                .tiles.gradient-black.p-l-20.p-r-20.p-b-20.p-t-20
-                  .pull-right
-                    %a.hashtags.transparent{:href => "#"} #Art Design
-                  .clearfix
-            -#%img.lazy.hover-effect-img{:alt => "", :src => "cover_pic.png"}/
-            = image_tag "cover_pic.png"
-          .tiles.white
-            .tiles-body
-              .row
-                .user-profile-pic.text-left
-                  -#%img{:alt => "", "data-src" => "assets/img/profiles/avatar.jpg", "data-src-retina" => "assets/img/profiles/avatar2x.jpg", :height => "69", :src => "assets/img/profiles/avatar2x.jpg", :width => "69"}/
-                  .pull-right.m-r-20.m-t-35
-                    %span.bold.text-black.small-text 24m
-                .col-md-5.no-padding
-                  - if current_user
-                    .user-comment-wrapper
-                      .comment
-                        .user-name.text-black.bold
-                          = current_user.firstname
-                          %span.semi-bold
-                            = current_user.lastname
-                        .preview-wrapper @ krsz.ru
-                      .clearfix
-                .col-md-7.no-padding
-                  .clearfix
-                  .m-r-20.m-t-20.m-b-10.m-l-10
-                    %p.p-b-10
-                      - if @sensor
-                        %ul
-                          %li= "Дата: #{@sensor.created_at}"
-                          %li= "Температура: #{@sensor.temp}"
-                          %li= "CO2: #{@sensor.co2}"
-                    %a.hashtags.m-b-5{:href => "#"} #tag1
-                    %a.hashtags.m-b-5{:href => "#"} #tag2
-                    %a.hashtags.m-b-5{:href => "#"} #tag3
-    .row
-      .col-md-12.m-b-10
-        .widget-item{:style => "zoom: 1;"}
-          .controller.overlay.right
-            %a.reload{:href => "javascript:;"}
-            %a.remove{:href => "javascript:;"}
-          .tiles.green.overflow-hidden.full-height{:style => "max-height:214px"}
-            .overlayer.bottom-right.fullwidth
-              .overlayer-wrapper
-                .tiles.gradient-black.p-l-20.p-r-20.p-b-20.p-t-20
-                  .pull-right
-                    %a.hashtags.transparent{:href => "#"} #Art Design
-                  .clearfix
-            -#%img.lazy.hover-effect-img{:alt => "", :src => "cover_pic.png"}/
-            = image_tag "work.jpg"
-          .tiles.white
-            .tiles-body
-              .row
-                .user-profile-pic.text-left
-                  -#%img{:alt => "", "data-src" => "assets/img/profiles/avatar.jpg", "data-src-retina" => "assets/img/profiles/avatar2x.jpg", :height => "69", :src => "assets/img/profiles/avatar2x.jpg", :width => "69"}/
-                  .pull-right.m-r-20.m-t-35
-                    %span.bold.text-black.small-text 24m
-                .col-md-5.no-padding
-                  - if current_user
-                    .user-comment-wrapper
-                      .comment
-                        .user-name.text-black.bold
-                          = current_user.firstname
-                          %span.semi-bold
-                            = current_user.lastname
-                        .preview-wrapper @ krsz.ru
-                      .clearfix
-                .col-md-7.no-padding
-                  .clearfix
-                  .m-r-20.m-t-20.m-b-10.m-l-10
-                    %p.p-b-10
-                      = line_chart @sensors.pluck(:created_at, :co2)
-                      = line_chart @sensors.pluck(:created_at, :temp)
-                    %a.hashtags.m-b-5{:href => "#"} #tag1
-                    %a.hashtags.m-b-5{:href => "#"} #tag2
-                    %a.hashtags.m-b-5{:href => "#"} #tag3
+  .row
+    .col-md-6.m-b-10
+      %iframe{ allowfullscreen: "", frameborder: 0, width: 500, height: 282, src: "https://rtsp.me/embed/NwYjsHoc/" }
+    .col-md-6.m-b-10
+      %iframe{ allowfullscreen: "", frameborder: 0, width: 500, height: 282, src: "http://tl1.ru.rtsp.me/timelapse/NwYjsHoc.mp4" }
+  .row
+    .col-md-6.m-b-10
+      .widget-item{:style => "zoom: 1;"}
+        .controller.overlay.right
+          %a.reload{href: "javascript:;"}
+          %a.remove{href: "javascript:;"}
+        .tiles.green.overflow-hidden.full-height{:style => "max-height:214px"}
+          .overlayer.bottom-right.fullwidth
+            .overlayer-wrapper
+              .tiles.gradient-black.p-l-20.p-r-20.p-b-20.p-t-20
+                .pull-right
+                  %a.hashtags.transparent{href: "#"} #Art Design
+                .clearfix
+          -#%img.lazy.hover-effect-img{:alt => "", :src => "cover_pic.png"}/
+          = image_tag "cover_pic.png"
+        .tiles.white
+          .tiles-body
+            .row
+              .user-profile-pic.text-left
+                -#%img{:alt => "", "data-src" => "assets/img/profiles/avatar.jpg", "data-src-retina" => "assets/img/profiles/avatar2x.jpg", :height => "69", :src => "assets/img/profiles/avatar2x.jpg", :width => "69"}/
+                .pull-right.m-r-20.m-t-35
+                  %span.bold.text-black.small-text 24m
+              .col-md-5.no-padding
+                - if current_user
+                  .user-comment-wrapper
+                    .comment
+                      .user-name.text-black.bold
+                        = current_user.firstname
+                        %span.semi-bold
+                          = current_user.lastname
+                      .preview-wrapper @ krsz.ru
+                    .clearfix
+              .col-md-7.no-padding
+                .clearfix
+                .m-r-20.m-t-20.m-b-10.m-l-10
+                  %p.p-b-10
+                    - if @sensor
+                      %ul
+                        %li= "Дата: #{@sensor.created_at}"
+                        %li= "Температура: #{@sensor.temp}"
+                        %li= "CO2: #{@sensor.co2}"
+                  %a.hashtags.m-b-5{href: "#"} #tag1
+                  %a.hashtags.m-b-5{href: "#"} #tag2
+                  %a.hashtags.m-b-5{href: "#"} #tag3
+  .row
+    .col-md-12.m-b-10
+      .widget-item{:style => "zoom: 1;"}
+        .controller.overlay.right
+          %a.reload{href: "javascript:;"}
+          %a.remove{href: "javascript:;"}
+        .tiles.green.overflow-hidden.full-height{:style => "max-height:214px"}
+          .overlayer.bottom-right.fullwidth
+            .overlayer-wrapper
+              .tiles.gradient-black.p-l-20.p-r-20.p-b-20.p-t-20
+                .pull-right
+                  %a.hashtags.transparent{href: "#"} #Art Design
+                .clearfix
+          -#%img.lazy.hover-effect-img{:alt => "", :src => "cover_pic.png"}/
+          = image_tag "work.jpg"
+        .tiles.white
+          .tiles-body
+            .row
+              .user-profile-pic.text-left
+                -#%img{:alt => "", "data-src" => "assets/img/profiles/avatar.jpg", "data-src-retina" => "assets/img/profiles/avatar2x.jpg", :height => "69", :src => "assets/img/profiles/avatar2x.jpg", :width => "69"}/
+                .pull-right.m-r-20.m-t-35
+                  %span.bold.text-black.small-text 24m
+              .col-md-5.no-padding
+                - if current_user
+                  .user-comment-wrapper
+                    .comment
+                      .user-name.text-black.bold
+                        = current_user.firstname
+                        %span.semi-bold
+                          = current_user.lastname
+                      .preview-wrapper @ krsz.ru
+                    .clearfix
+              .col-md-7.no-padding
+                .clearfix
+                .m-r-20.m-t-20.m-b-10.m-l-10
+                  %p.p-b-10
+                    = line_chart @sensors.pluck(:created_at, :co2)
+                    = line_chart @sensors.pluck(:created_at, :temp)
+                  %a.hashtags.m-b-5{href: "#"} #tag1
+                  %a.hashtags.m-b-5{href: "#"} #tag2
+                  %a.hashtags.m-b-5{href: "#"} #tag3

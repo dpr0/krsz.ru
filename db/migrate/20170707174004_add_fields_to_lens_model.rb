@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddFieldsToLensModel < ActiveRecord::Migration[5.1]
   def change
     remove_column :lens_models, :weather, :boolean

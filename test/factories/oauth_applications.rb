@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 FactoryGirl.define do
   factory :oauth_application, class: Doorkeeper::Application do
     name 'Test'
@@ -5,4 +7,4 @@ FactoryGirl.define do
     uid '12345678'
     secret '87654321'
   end
-end 
+end

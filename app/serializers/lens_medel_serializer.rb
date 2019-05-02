@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # class LensModelSerializer < ActiveModel::Serializer
 #   attributes :id, :brand, :name, :mount, :info
 #   has_many :lens_items

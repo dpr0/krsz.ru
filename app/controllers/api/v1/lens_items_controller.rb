@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Api::V1::LensItemsController < Api::V1::BaseController
   def index
     @lens_items = LensModel.find(params[:lens_model_id]).lens_items

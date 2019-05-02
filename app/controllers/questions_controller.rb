@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class QuestionsController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :show]
-  before_action :load_question, except: [:new, :create]
+  before_action :authenticate_user!, except: %i[index show]
+  before_action :load_question, except: %i[new create]
   after_action :publish_question, only: :create
 
   respond_to :json
@@ -20,9 +22,7 @@ class QuestionsController < ApplicationController
     respond_with (@question = Question.new)
   end
 
-  def edit
-
-  end
+  def edit; end
 
   def create
     respond_with (@question = current_user.questions.create(question_params))
@@ -35,7 +35,7 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    respond_with (@question.destroy)
+    respond_with @question.destroy
   end
 
   private
@@ -45,11 +45,12 @@ class QuestionsController < ApplicationController
   end
 
   def question_params
-    params.require(:question).permit(:title, :body, attaches_attributes: [:id, :file, :_destroy])
+    params.require(:question).permit(:title, :body, attaches_attributes: %i[id file _destroy])
   end
 
   def publish_question
     return if @question.errors.any?
-    ActionCable.server.broadcast 'questions', ApplicationController.render( partial: 'questions/question_ac', locals: {question: @question} )
+
+    ActionCable.server.broadcast 'questions', ApplicationController.render(partial: 'questions/question_ac', locals: { question: @question })
   end
 end

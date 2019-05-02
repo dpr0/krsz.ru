@@ -1,10 +1,11 @@
-class Api::V1::ProfilesController < Api::V1::BaseController
+# frozen_string_literal: true
 
-  def me #http://localhost:3000/api/v1/profiles/me.json?access_token=
+class Api::V1::ProfilesController < Api::V1::BaseController
+  def me # http://localhost:3000/api/v1/profiles/me.json?access_token=
     respond_with current_resource_owner
   end
 
-  def users #http://localhost:3000/api/v1/profiles/users.json?access_token=
+  def users # http://localhost:3000/api/v1/profiles/users.json?access_token=
     respond_with User.where.not('id = ?', current_resource_owner.id)
   end
 
@@ -23,5 +24,4 @@ class Api::V1::ProfilesController < Api::V1::BaseController
   def lens_models
     respond_with LensModel.all
   end
-
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # config valid only for current version of Capistrano
 lock '3.11.0'
 
@@ -5,13 +7,13 @@ set :application, 'krsz'
 set :repo_url, 'git@github.com:dpr0/krsz.ru.git'
 set :deploy_to, '/home/deploy/krsz'
 set :deploy_user, 'deploy'
-set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/private_pub.yml', 'config/private_pub_thin.yml', '.env') #, 'config/secrets.yml'
+set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/private_pub.yml', 'config/private_pub_thin.yml', '.env') # , 'config/secrets.yml'
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 
 namespace :deploy do
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
-      #execute :touch, release_path.join('tmp/restart.txt')
+      # execute :touch, release_path.join('tmp/restart.txt')
       invoke 'unicorn:restart'
     end
   end

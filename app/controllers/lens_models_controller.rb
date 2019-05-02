@@ -27,4 +27,3 @@ class LensModelsController < ApplicationController
     lens.update(sony_forum_link: params[:link])
   end
 end
-

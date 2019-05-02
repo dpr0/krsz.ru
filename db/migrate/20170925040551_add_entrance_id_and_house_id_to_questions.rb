@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddEntranceIdAndHouseIdToQuestions < ActiveRecord::Migration[5.1]
   def change
     add_column :questions, :house_id,    :integer, default: false

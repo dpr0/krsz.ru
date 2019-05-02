@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # require 'test_helper'
 
 describe 'Profile API' do
@@ -15,8 +17,8 @@ describe 'Profile API' do
     end
 
     context 'authorized' do
-      let(:me) {create(:user)}
-      let(:access_token) {create(:access_token, resource_owner_id: me.id)}
+      let(:me) { create(:user) }
+      let(:access_token) { create(:access_token, resource_owner_id: me.id) }
 
       before { get '/api/v1/profiles/me', format: :json, access_token: access_token.token }
 
@@ -24,20 +26,18 @@ describe 'Profile API' do
         expect(response).to be_success
       end
 
-      %w(id email created_at updated_at admin).each do |attr|
+      %w[id email created_at updated_at admin].each do |attr|
         it "contains #{attr}" do
           expect(response.body).to be_json_eql(me.send(attr.to_sym).to_json).at_path(attr)
         end
       end
 
-      %w(password encrypted_password).each do |attr|
+      %w[password encrypted_password].each do |attr|
         it "doesnt contains #{attr}" do
           expect(response.body).to_not have_json_path(attr)
         end
       end
-
     end
-
   end
 
   # --------------------------
@@ -52,12 +52,11 @@ describe 'Profile API' do
         get '/api/v1/profiles/users', format: :json, access_token: '5865865876'
         expect(response.status).to eq 401
       end
-
     end
 
     context 'authorized' do
       let(:me) { create :user }
-      let(:access_token) {create(:access_token, resource_owner_id: me.id)}
+      let(:access_token) { create(:access_token, resource_owner_id: me.id) }
       let!(:users) { create_list(:user, 5) }
 
       before { get '/api/v1/profiles/users', format: :json, access_token: access_token.token }
@@ -66,13 +65,13 @@ describe 'Profile API' do
         expect(response).to be_success
       end
 
-      %w(id email created_at updated_at admin).each do |attr|
+      %w[id email created_at updated_at admin].each do |attr|
         it "contains #{attr} all users" do
           expect(response.body).to be_json_eql(users.to_json)
         end
       end
 
-      %w(password encrypted_password).each do |attr|
+      %w[password encrypted_password].each do |attr|
         it "does not contain #{attr} all users" do
           expect(response.body).to_not have_json_path(attr)
         end

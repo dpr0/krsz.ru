@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class HousesController < ApplicationController
   before_action :set_house, only: :show
   respond_to :html
@@ -12,11 +14,12 @@ class HousesController < ApplicationController
   end
 
   private
-    def set_house
-      @house = House.find(params[:id])
-    end
 
-    def house_params
-      params.require(:house).permit(:street, :number)
-    end
+  def set_house
+    @house = House.find(params[:id])
+  end
+
+  def house_params
+    params.require(:house).permit(:street, :number)
+  end
 end

@@ -25,8 +25,7 @@ class LensItemsController < ApplicationController
     respond_with(@lens_item)
   end
 
-  def edit
-  end
+  def edit; end
 
   def create
     @lens_item = current_user.lens_items.create(lens_item_params)

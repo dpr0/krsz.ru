@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class EntrancesController < ApplicationController
   before_action :set_entrance, only: :show
 
@@ -15,11 +17,12 @@ class EntrancesController < ApplicationController
   end
 
   private
-    def set_entrance
-      @entrance = Entrance.find(params[:id])
-    end
 
-    def entrance_params
-      params.require(:entrance).permit(:number)
-    end
+  def set_entrance
+    @entrance = Entrance.find(params[:id])
+  end
+
+  def entrance_params
+    params.require(:entrance).permit(:number)
+  end
 end

@@ -1,14 +1,14 @@
+# frozen_string_literal: true
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
 # server 'krsz.ru', user: 'deploy', roles: %w{app db web}, primary: true
-server '192.168.1.21', user: 'deploy', roles: %w{app db web}, primary: true
+server '192.168.1.21', user: 'deploy', roles: %w[app db web], primary: true
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
-
-
 
 # role-based syntax
 # ==================
@@ -18,9 +18,9 @@ server '192.168.1.21', user: 'deploy', roles: %w{app db web}, primary: true
 # property set. Specify the username and a domain or IP for the server.
 # Don't use `:all`, it's a meta role.
 
-role :app, %w{deploy@192.168.1.21}
-role :web, %w{deploy@192.168.1.21}
-role :db,  %w{deploy@192.168.1.21}
+role :app, %w[deploy@192.168.1.21]
+role :web, %w[deploy@192.168.1.21]
+role :db,  %w[deploy@192.168.1.21]
 # role :app, %w{deploy@krsz.ru}
 # role :web, %w{deploy@krsz.ru}
 # role :db,  %w{deploy@krsz.ru}
@@ -36,8 +36,6 @@ set :stage, :production
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
 
-
-
 # Custom SSH Options
 # ==================
 # You may pass any option but keep in mind that net/ssh understands a
@@ -46,10 +44,9 @@ set :stage, :production
 #
 # Global options
 # --------------
-set :ssh_options, {
-    keys: %w(/home/dpro/.ssh/id_rsa),
+set :ssh_options,
+    keys: %w[/home/dpro/.ssh/id_rsa],
     forward_agent: true,
-    auth_methods: %w(publickey password),
+    auth_methods: %w[publickey password],
     port: 22
-    # port: 2222
-}
+# port: 2222

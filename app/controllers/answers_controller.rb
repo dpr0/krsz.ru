@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class AnswersController < ApplicationController
   before_action :authenticate_user!
-  before_action :load_answer, only: [:destroy, :update]
+  before_action :load_answer, only: %i[destroy update]
   after_action :publish_answer, only: [:create]
 
   respond_to :js
@@ -28,7 +30,7 @@ class AnswersController < ApplicationController
   end
 
   def answer_params
-    params.require(:answer).permit(:body, attaches_attributes: [:id, :file, :_destroy]).merge(user_id: current_user.id)
+    params.require(:answer).permit(:body, attaches_attributes: %i[id file _destroy]).merge(user_id: current_user.id)
   end
 
   def publish_answer

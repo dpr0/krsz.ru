@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddFieldsToCameraModel < ActiveRecord::Migration[5.1]
   def change
     add_column :camera_models, :full_name,        :string

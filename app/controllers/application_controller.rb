@@ -39,7 +39,7 @@ class ApplicationController < ActionController::Base
 
   def self.render_with_serializer(user, *args)
     ActionController::Renderer::RACK_KEY_TRANSLATION['warden'] ||= 'warden'
-    proxy = Warden::Proxy.new({}, Warden::Manager.new({})).tap{|i| i.set_user(user, scope: :user) }
+    proxy = Warden::Proxy.new({}, Warden::Manager.new({})).tap { |i| i.set_user(user, scope: :user) }
     renderer = self.renderer.new('warden' => proxy)
     renderer.render(*args)
   end
@@ -51,6 +51,7 @@ class ApplicationController < ActionController::Base
   def brand_or_mount
     return { mount: params[:mount] } if params[:mount]
     return { brand: params[:brand] } if params[:brand]
+
     {}
   end
 end

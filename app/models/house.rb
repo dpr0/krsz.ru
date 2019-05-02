@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 class House < ApplicationRecord
   has_many :entrances
   has_many :questions
 
   def name
-    self.street + ', ' + self.number
+    street + ', ' + number
   end
 end
